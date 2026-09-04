@@ -1,13 +1,25 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useDecks } from "@/lib/useDecks";
 import { Waveform } from "./Waveform";
-import type { Brief, Dj, DjSet } from "@/lib/types";
+import type { Brief, Track } from "@/lib/types";
 
 type Side = "a" | "b";
 type Verdict = Side | "tie";
+
+/* The browser never receives a model name, lab or id until a ballot comes back from the
+   server. Everything here works from an opaque token, which is what keeps the test blind. */
+export type AnonBattle = {
+  token: string;
+  brief: Brief;
+  a: { read: string; tracks: Track[] };
+  b: { read: string; tracks: Track[] };
+};
+
+type RevealedDj = { id: string; name: string; lab: string; model: string; accent: string };
+type Reveal = { a: RevealedDj; b: RevealedDj };
 
 const CH_A = "#d6f94a";
 const CH_B = "#4ad9f9";
@@ -19,32 +31,31 @@ const clock = (s: number) => {
 };
 
 export function Arena({
-  brief,
-  setA,
-  setB,
-  djA,
-  djB,
+  battle,
+  loadingNext,
+  onRevealed,
   onNextBattle,
 }: {
-  brief: Brief;
-  setA: DjSet;
-  setB: DjSet;
-  djA: Dj;
-  djB: Dj;
+  battle: AnonBattle;
+  loadingNext: boolean;
+  onRevealed: (pairKey: string) => void;
   onNextBattle: () => void;
 }) {
+  const { brief } = battle;
   const mountA = useRef<HTMLDivElement>(null);
   const mountB = useRef<HTMLDivElement>(null);
-  const deck = useDecks(setA.tracks, setB.tracks, mountA, mountB);
+  const deck = useDecks(battle.a.tracks, battle.b.tracks, mountA, mountB);
 
   const [verdict, setVerdict] = useState<Verdict | null>(null);
+  const [reveal, setReveal] = useState<Reveal | null>(null);
+  const [counted, setCounted] = useState(true);
   const [sending, setSending] = useState(false);
   const [peek, setPeek] = useState(false);
   const [heard, setHeard] = useState({ a: false, b: false });
 
-  const len = Math.min(setA.tracks.length, setB.tracks.length);
-  const tA = setA.tracks[deck.index];
-  const tB = setB.tracks[deck.index];
+  const len = Math.min(battle.a.tracks.length, battle.b.tracks.length);
+  const tA = battle.a.tracks[deck.index];
+  const tB = battle.b.tracks[deck.index];
   const hold = tA?.playSec ?? 45;
   const progress = Math.max(0, Math.min(1, deck.elapsed / hold));
 
@@ -63,23 +74,24 @@ export function Arena({
       setSending(true);
       setVerdict(v);
       try {
-        await fetch("/api/vote", {
+        const res = await fetch("/api/vote", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            briefId: brief.id,
-            aId: djA.id,
-            bId: djB.id,
-            winner: v === "tie" ? "tie" : v === "a" ? djA.id : djB.id,
-          }),
+          body: JSON.stringify({ token: battle.token, winner: v }),
         });
+        const data = await res.json();
+        if (data?.reveal) {
+          setReveal(data.reveal);
+          setCounted(data.counted !== false);
+          onRevealed(`${brief.id}:${[data.reveal.a.id, data.reveal.b.id].sort().join(":")}`);
+        }
       } catch {
-        /* the reveal still stands locally if the tally cannot be reached */
+        /* the decks stay anonymous if the ballot cannot reach the server */
       } finally {
         setSending(false);
       }
     },
-    [brief.id, djA.id, djB.id, sending, verdict],
+    [battle.token, brief.id, onRevealed, sending, verdict],
   );
 
   // Console shortcuts. A booth is played with hands, not menus.
@@ -118,6 +130,9 @@ export function Arena({
   const blur = peek ? "1.5px" : "7px";
   // Peeking pulls the scrim back so the listener can confirm the audio is real YouTube.
   const scrim = peek ? "rgba(10,10,11,.34)" : "rgba(10,10,11,.76)";
+  // A fully faded-out deck stays loaded and audible-ready but drops out of paint entirely.
+  const hiddenA = deck.crossfade > 0.99;
+  const hiddenB = deck.crossfade < 0.01;
 
   return (
     <div className="relative min-h-[100dvh] overflow-hidden">
@@ -125,23 +140,34 @@ export function Arena({
       <div className="fixed inset-0 z-0" aria-hidden="true">
         <div
           className="ytwrap transition-opacity duration-200"
-          style={{ opacity: 1 - deck.crossfade, ["--proj-blur" as string]: blur }}
+          style={{
+            opacity: 1 - deck.crossfade,
+            visibility: hiddenA ? "hidden" : "visible",
+            ["--proj-blur" as string]: blur,
+          }}
         >
           <div ref={mountA} className="h-full w-full" />
         </div>
         <div
           className="ytwrap transition-opacity duration-200"
-          style={{ opacity: deck.crossfade, ["--proj-blur" as string]: blur }}
+          style={{
+            opacity: deck.crossfade,
+            visibility: hiddenB ? "hidden" : "visible",
+            ["--proj-blur" as string]: blur,
+          }}
         >
           <div ref={mountB} className="h-full w-full" />
         </div>
-        <div className="absolute inset-0 transition-colors duration-300" style={{ background: scrim }} />
+        <div
+          className="absolute inset-0 transition-colors duration-300"
+          style={{ background: scrim }}
+        />
         <div className="etch absolute inset-0 opacity-70" />
       </div>
 
       {/* ENTRY GATE. Also supplies the user gesture browsers require before audio. */}
       {!deck.started && (
-        <div className="fixed inset-0 z-40 flex items-center justify-center bg-base/94 px-5">
+        <div className="fixed inset-0 z-40 flex items-center justify-center overflow-y-auto bg-base/94 px-5 py-8">
           <div className="w-full max-w-2xl">
             <h1 className="font-display text-5xl leading-[1.02] tracking-tighter sm:text-7xl">
               Two models.
@@ -153,11 +179,11 @@ export function Arena({
             </p>
 
             <div className="mt-8 border-y hair py-5">
-              <div className="tnum text-[11px] uppercase tracking-[0.2em] text-dim">
-                Tonight
-              </div>
+              <div className="tnum text-[11px] uppercase tracking-[0.2em] text-dim">Tonight</div>
               <div className="mt-2 font-display text-2xl tracking-tight">{brief.title}</div>
-              <p className="mt-2 max-w-[54ch] text-sm leading-relaxed text-muted">{brief.situation}</p>
+              <p className="mt-2 max-w-[54ch] text-sm leading-relaxed text-muted">
+                {brief.situation}
+              </p>
             </div>
 
             <button
@@ -199,7 +225,6 @@ export function Arena({
           </nav>
         </header>
 
-        {/* Brief strip */}
         <section className="grid gap-x-8 gap-y-2 border-b hair py-3 sm:grid-cols-[auto_1fr_auto]">
           <div className="tnum text-[11px] uppercase tracking-[0.16em] text-dim">
             {brief.clock} · {brief.venue.split(".")[0]}
@@ -210,24 +235,20 @@ export function Arena({
           </div>
         </section>
 
-        {/* Decks and mixer */}
         <main className="grid flex-1 items-center gap-4 py-4 lg:grid-cols-[1fr_auto_1fr]">
           <DeckPanel
-            side="a"
             label="Deck A"
             color={CH_A}
             gain={1 - deck.crossfade}
             track={tA}
             progress={progress}
             index={deck.index}
-            total={len}
             elapsed={deck.elapsed}
             hold={hold}
             failed={deck.failed.a}
-            revealed={!!verdict}
-            dj={djA}
-            read={setA.read}
-            tracks={setA.tracks}
+            dj={reveal?.a ?? null}
+            read={battle.a.read}
+            tracks={battle.a.tracks}
           />
 
           <Mixer
@@ -240,33 +261,29 @@ export function Arena({
           />
 
           <DeckPanel
-            side="b"
             label="Deck B"
             color={CH_B}
             gain={deck.crossfade}
             track={tB}
             progress={progress}
             index={deck.index}
-            total={len}
             elapsed={deck.elapsed}
             hold={hold}
             failed={deck.failed.b}
-            revealed={!!verdict}
-            dj={djB}
-            read={setB.read}
-            tracks={setB.tracks}
+            dj={reveal?.b ?? null}
+            read={battle.b.read}
+            tracks={battle.b.tracks}
           />
         </main>
       </div>
 
-      {verdict && (
-        <Reveal
+      {reveal && verdict && (
+        <RevealBar
           verdict={verdict}
-          djA={djA}
-          djB={djB}
-          setA={setA}
-          setB={setB}
+          reveal={reveal}
+          counted={counted}
           brief={brief}
+          loadingNext={loadingNext}
           onNext={onNextBattle}
         />
       )}
@@ -274,41 +291,53 @@ export function Arena({
   );
 }
 
-function DeckPanel(props: {
-  side: Side;
+function DeckPanel({
+  label,
+  color,
+  gain,
+  track,
+  progress,
+  index,
+  elapsed,
+  hold,
+  failed,
+  dj,
+  read,
+  tracks,
+}: {
   label: string;
   color: string;
   gain: number;
-  track: any;
+  track: Track | undefined;
   progress: number;
   index: number;
-  total: number;
   elapsed: number;
   hold: number;
   failed: boolean;
-  revealed: boolean;
-  dj: Dj;
+  dj: RevealedDj | null;
   read: string;
-  tracks: any[];
+  tracks: Track[];
 }) {
-  const { label, color, gain, track, progress, failed, revealed, dj, read, tracks, index, elapsed, hold } = props;
   const live = gain > 0.5;
   if (!track) return null;
 
   return (
     <section className="face rounded-[2px] border hair p-4">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between gap-3">
         <div className="flex items-center gap-2">
           <span
             className={`h-2 w-2 rounded-full ${live ? "live-dot" : ""}`}
             style={{ background: live ? color : "#3a3a44" }}
           />
-          <span className="tnum text-[11px] uppercase tracking-[0.2em]" style={{ color: live ? color : "#8b8b95" }}>
+          <span
+            className="tnum text-[11px] uppercase tracking-[0.2em]"
+            style={{ color: live ? color : "#8b8b95" }}
+          >
             {label}
           </span>
         </div>
-        <span className="tnum text-[11px] text-dim">
-          {revealed ? `${dj.name} · ${dj.lab}` : "Identity hidden"}
+        <span className="tnum truncate text-[11px] text-dim">
+          {dj ? `${dj.name} · ${dj.lab}` : "Identity hidden"}
         </span>
       </div>
 
@@ -336,16 +365,18 @@ function DeckPanel(props: {
         {track.why}
       </p>
 
-      {revealed && (
+      {dj && (
         <div className="mt-3 border-t hair pt-3">
           <p className="text-[13px] leading-snug text-muted">
             <span className="text-dim">The read. </span>
             {read}
           </p>
           <ol className="tnum mt-3 space-y-1 text-[11px]">
-            {tracks.map((t: any, i: number) => (
+            {tracks.map((t, i) => (
               <li key={i} className={i === index ? "text-ink" : "text-dim"}>
-                <span style={{ color: i === index ? color : undefined }}>{String(i + 1).padStart(2, "0")}</span>{" "}
+                <span style={{ color: i === index ? color : undefined }}>
+                  {String(i + 1).padStart(2, "0")}
+                </span>{" "}
                 {t.artist}, {t.title}
               </li>
             ))}
@@ -446,9 +477,13 @@ function Mixer({
         {!verdict && !canVote && (
           <p className="mt-3 text-[12px] leading-snug text-dim">
             Ride the fader to both ends before you vote.{" "}
-            <span style={{ color: heard.a ? CH_A : undefined }}>A {heard.a ? "heard" : "pending"}</span>
+            <span style={{ color: heard.a ? CH_A : undefined }}>
+              A {heard.a ? "heard" : "pending"}
+            </span>
             {", "}
-            <span style={{ color: heard.b ? CH_B : undefined }}>B {heard.b ? "heard" : "pending"}</span>
+            <span style={{ color: heard.b ? CH_B : undefined }}>
+              B {heard.b ? "heard" : "pending"}
+            </span>
             {"."}
           </p>
         )}
@@ -457,36 +492,37 @@ function Mixer({
   );
 }
 
-function Reveal({
+function RevealBar({
   verdict,
-  djA,
-  djB,
-  setA,
-  setB,
+  reveal,
+  counted,
   brief,
+  loadingNext,
   onNext,
 }: {
   verdict: Verdict;
-  djA: Dj;
-  djB: Dj;
-  setA: DjSet;
-  setB: DjSet;
+  reveal: Reveal;
+  counted: boolean;
   brief: Brief;
+  loadingNext: boolean;
   onNext: () => void;
 }) {
-  const winner = verdict === "tie" ? null : verdict === "a" ? djA : djB;
+  const winner = verdict === "tie" ? null : verdict === "a" ? reveal.a : reveal.b;
   return (
     <div className="fixed inset-x-0 bottom-0 z-30 border-t hair bg-panel/97 px-4 py-4 backdrop-blur-sm sm:px-6">
       <div className="mx-auto flex max-w-[1400px] flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <div className="tnum text-[11px] uppercase tracking-[0.2em] text-dim">Decks revealed</div>
           <div className="mt-1.5 font-display text-xl tracking-tight">
-            <span style={{ color: CH_A }}>{djA.name}</span>
+            <span style={{ color: CH_A }}>{reveal.a.name}</span>
             <span className="text-dim"> against </span>
-            <span style={{ color: CH_B }}>{djB.name}</span>
+            <span style={{ color: CH_B }}>{reveal.b.name}</span>
           </div>
           <p className="mt-1 text-[13px] text-muted">
-            {winner ? `You gave ${brief.title} to ${winner.name} of ${winner.lab}.` : "You called it a tie."}
+            {winner
+              ? `You gave ${brief.title} to ${winner.name} of ${winner.lab}.`
+              : "You called it a tie."}
+            {!counted && " You have already rated this pairing, so the standings stay put."}
           </p>
         </div>
         <div className="flex shrink-0 gap-2">
@@ -498,9 +534,10 @@ function Reveal({
           </Link>
           <button
             onClick={onNext}
-            className="rounded-[2px] bg-cha px-6 py-3 font-display text-sm font-semibold tracking-tight text-base hover:opacity-90"
+            disabled={loadingNext}
+            className="rounded-[2px] bg-cha px-6 py-3 font-display text-sm font-semibold tracking-tight text-base hover:opacity-90 disabled:opacity-50"
           >
-            Next battle
+            {loadingNext ? "Cueing" : "Next battle"}
           </button>
         </div>
       </div>

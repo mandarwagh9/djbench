@@ -1,9 +1,29 @@
 import { NextResponse } from "next/server";
+import { createHash } from "node:crypto";
 import { recordVote, storeReady } from "@/lib/store";
+import { openBattle, pairKey } from "@/lib/battle";
 import { CATALOG } from "@/lib/data";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
+
+/* Identity is revealed here and nowhere earlier. The browser sends back the opaque token it
+   was given plus a side, so it never had to know which model it was judging. */
+
+function voterHash(req: Request) {
+  const fwd = req.headers.get("x-forwarded-for") ?? "";
+  const ip = fwd.split(",")[0].trim() || req.headers.get("x-real-ip") || "unknown";
+  // Salted with a server secret and stored only as a digest, so no address is retained.
+  return createHash("sha256")
+    .update(`${ip}|${process.env.GCP_SA_KEY?.slice(0, 32) ?? "dev"}`)
+    .digest("hex")
+    .slice(0, 32);
+}
+
+const pub = (id: string) => {
+  const d = CATALOG.djs.find((x) => x.id === id)!;
+  return { id: d.id, name: d.name, lab: d.lab, model: d.model, accent: d.accent };
+};
 
 export async function POST(req: Request) {
   if (!storeReady()) {
@@ -17,23 +37,26 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: false, error: "bad json" }, { status: 400 });
   }
 
-  const ids = new Set(CATALOG.djs.map((d) => d.id));
-  const briefs = new Set(CATALOG.briefs.map((b) => b.id));
-  const { briefId, aId, bId, winner } = body ?? {};
+  const pairing = openBattle(body?.token);
+  const side = body?.winner;
+  if (!pairing || !["a", "b", "tie"].includes(side)) {
+    return NextResponse.json({ ok: false, error: "invalid ballot" }, { status: 400 });
+  }
 
-  const valid =
-    typeof briefId === "string" && briefs.has(briefId) &&
-    typeof aId === "string" && ids.has(aId) &&
-    typeof bId === "string" && ids.has(bId) &&
-    aId !== bId &&
-    (winner === "tie" || winner === aId || winner === bId);
-
-  if (!valid) return NextResponse.json({ ok: false, error: "invalid ballot" }, { status: 400 });
+  const winner = side === "tie" ? "tie" : side === "a" ? pairing.aId : pairing.bId;
+  const reveal = { a: pub(pairing.aId), b: pub(pairing.bId) };
 
   try {
-    await recordVote({ briefId, aId, bId, winner });
-    return NextResponse.json({ ok: true });
+    const result = await recordVote({
+      ...pairing,
+      winner,
+      voter: voterHash(req),
+      pairKey: pairKey(pairing),
+    });
+    // A duplicate or throttled ballot still reveals the decks: the listener did the listening,
+    // they just do not get to move the rating twice.
+    return NextResponse.json({ ok: true, counted: result === "ok", result, reveal });
   } catch {
-    return NextResponse.json({ ok: false, error: "write failed" }, { status: 500 });
+    return NextResponse.json({ ok: false, error: "write failed", reveal }, { status: 500 });
   }
 }

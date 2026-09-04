@@ -35,20 +35,40 @@ export const storeReady = () => client() !== null;
 const STANDINGS = "standings";
 const VOTES = "votes";
 
+export type BallotResult = "ok" | "duplicate" | "rate-limited";
+
+const WINDOW_MS = 60 * 60 * 1000;  // rolling hour
+const MAX_PER_WINDOW = 40;         // there are only 90 pairings, so this is generous for a real listener
+
+/* One transaction does the whole ballot: rate check, duplicate check, both Elo updates and the
+   vote log. Reads first, writes second, as Firestore requires. A listener gets one vote per
+   pairing, which makes casual stuffing cost more than a curl loop. */
 export async function recordVote(v: {
   briefId: string;
   aId: string;
   bId: string;
   winner: string; // a dj id, or "tie"
-}) {
+  voter: string;  // salted hash of the caller, never a raw address
+  pairKey: string;
+}): Promise<BallotResult> {
   const fs = client();
   if (!fs) throw new Error("vote store unavailable");
 
   const aRef = fs.collection(STANDINGS).doc(v.aId);
   const bRef = fs.collection(STANDINGS).doc(v.bId);
+  const rateRef = fs.collection("rate").doc(v.voter);
+  const ballotRef = fs.collection("ballots").doc(`${v.voter}__${v.pairKey}`);
 
-  await fs.runTransaction(async (tx) => {
-    const [aSnap, bSnap] = await tx.getAll(aRef, bRef);
+  return fs.runTransaction<BallotResult>(async (tx) => {
+    const [aSnap, bSnap, rateSnap, ballotSnap] = await tx.getAll(aRef, bRef, rateRef, ballotRef);
+
+    if (ballotSnap.exists) return "duplicate";
+
+    const now = Date.now();
+    const rate = (rateSnap.data() as { n: number; since: number } | undefined) ?? { n: 0, since: now };
+    const fresh = now - rate.since > WINDOW_MS ? { n: 0, since: now } : rate;
+    if (fresh.n >= MAX_PER_WINDOW) return "rate-limited";
+
     const a = (aSnap.data() as Standing | undefined) ?? blank(v.aId);
     const b = (bSnap.data() as Standing | undefined) ?? blank(v.bId);
 
@@ -65,7 +85,12 @@ export async function recordVote(v: {
 
     tx.set(aRef, a);
     tx.set(bRef, b);
-    tx.set(fs.collection(VOTES).doc(), { ...v, at: new Date().toISOString() });
+    tx.set(rateRef, { n: fresh.n + 1, since: fresh.since });
+    tx.set(ballotRef, { at: now });
+    tx.set(fs.collection(VOTES).doc(), {
+      briefId: v.briefId, aId: v.aId, bId: v.bId, winner: v.winner, at: new Date(now).toISOString(),
+    });
+    return "ok";
   });
 }
 

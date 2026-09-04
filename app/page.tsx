@@ -1,9 +1,11 @@
 import { ArenaShell } from "@/components/ArenaShell";
-import { CATALOG, randomBattle } from "@/lib/data";
+import { mintBattle } from "@/lib/battle";
 
-// A fresh pairing per visit, so nobody lands on the same battle twice in a row.
+// A fresh pairing per visit, minted server side so no model identity reaches the browser.
 export const dynamic = "force-dynamic";
 
 export default function Page() {
-  return <ArenaShell catalog={CATALOG} initial={randomBattle()} />;
+  const battle = mintBattle();
+  if (!battle) return null;
+  return <ArenaShell initial={battle} />;
 }
