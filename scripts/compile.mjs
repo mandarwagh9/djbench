@@ -33,9 +33,15 @@ function waveform(seedStr, bars = 96) {
 // Meaning and word order are untouched, and data/raw keeps every original verbatim.
 function tidy(s) {
   return String(s || "")
-    .replace(/\s*[—–]\s*/g, ". ")   // dash used as a pause becomes a sentence break
-    .replace(/,\s*\.\s*/g, ", ")               // avoid ", ." where the dash followed a comma
+    // A dash used as a pause becomes a real break: a full stop when a new sentence
+    // follows, a comma when the model carried on mid-sentence in lower case.
+    .replace(/\s*[—–]\s*(.)/g, (_m, next) =>
+      /[a-z0-9]/.test(next) ? `, ${next}` : `. ${next}`)
+    .replace(/\s*[—–]\s*$/g, "")
+    .replace(/,\s*,/g, ",")
+    .replace(/,\s*\./g, ".")
     .replace(/\.\s*\./g, ".")
+    .replace(/\s+([,.;:])/g, "$1")
     .replace(/\s+/g, " ")
     .trim();
 }

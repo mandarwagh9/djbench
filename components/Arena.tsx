@@ -104,6 +104,16 @@ export function Arena({
     return () => window.removeEventListener("keydown", onKey);
   }, [deck]);
 
+  // The entry gate is fixed, so let it own the viewport instead of scrolling the console behind it.
+  useEffect(() => {
+    if (deck.started) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = prev;
+    };
+  }, [deck.started]);
+
   // Applied inside the quarter-scale layer, so 7px reads as roughly 28px on screen.
   const blur = peek ? "1.5px" : "7px";
   // Peeking pulls the scrim back so the listener can confirm the audio is real YouTube.
