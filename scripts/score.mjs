@@ -47,7 +47,7 @@ for (const dj of djs) {
   const sets = setsByDj.get(dj.id) ?? [];
   if (!sets.length) continue;
 
-  let named = 0, real = 0, dupArtist = 0, wrongLength = 0;
+  let named = 0, real = 0, unchecked = 0, dupArtist = 0, wrongLength = 0;
   const years = [];
   const bpms = [];
   const allKeys = [];
@@ -58,7 +58,9 @@ for (const dj of djs) {
     const artists = new Set();
     for (const t of s.tracks) {
       named++;
-      if (cache[key(t)]?.ok) real++;
+      const hit = cache[key(t)];
+      if (hit?.ok) real++;
+      else if (!hit) unchecked++;   // resolve.py has not seen this record yet
       const a = norm(t.artist);
       if (artists.has(a)) dupArtist++;
       artists.add(a);
@@ -85,8 +87,10 @@ for (const dj of djs) {
     lab: dj.lab,
     sets: sets.length,
     named,
-    findable: pct(real, named),
-    invented: named - real,
+    checked: named - unchecked,
+    unchecked,
+    findable: pct(real, named - unchecked),
+    invented: named - unchecked - real,
     ruleBreaks: dupArtist + wrongLength,
     reuse: pct(named - uniqueRecords, named),
     eraSpread: spread,
@@ -100,19 +104,29 @@ rows.sort((a, b) => b.findable - a.findable || a.consensus - b.consensus);
 const w = (s, n) => String(s).padEnd(n);
 console.log(`\nDJbench objective scorecard   ${rows.length} entrants, ${briefs.length} rooms\n`);
 console.log(
-  w('MODEL', 20) + w('LAB', 11) + w('SETS', 6) + w('FINDABLE', 10) + w('INVENTED', 10) +
+  w('MODEL', 20) + w('LAB', 15) + w('SETS', 6) + w('FINDABLE', 10) + w('INVENTED', 10) +
   w('BREAKS', 8) + w('REUSE', 7) + w('ERA±', 6) + w('BPM', 10) + 'CONSENSUS',
 );
-console.log('-'.repeat(103));
+console.log('-'.repeat(107));
 for (const r of rows) {
   console.log(
-    w(r.name, 20) + w(r.lab, 11) + w(r.sets, 6) + w(`${r.findable}%`, 10) + w(r.invented, 10) +
+    w(r.name, 20) + w(r.lab.slice(0, 13), 15) + w(r.sets, 6) + w(`${r.findable}%`, 10) + w(r.invented, 10) +
     w(r.ruleBreaks, 8) + w(`${r.reuse}%`, 7) + w(r.eraSpread, 6) + w(r.bpmRange, 10) + r.consensus,
   );
 }
 
+const pending = rows.filter((r) => r.unchecked > 0);
+if (pending.length) {
+  console.log(
+    `
+note: ${pending.map((r) => `${r.name} has ${r.unchecked} record(s)`).join(', ')} not yet looked up.` +
+    `
+      Run "python scripts/resolve.py" first, or FINDABLE and INVENTED understate them.`,
+  );
+}
+
 console.log(`
-FINDABLE   share of named records that resolved to a real, embeddable video
+FINDABLE   share of CHECKED records that resolved to a real, embeddable video
 INVENTED   records that could not be found at all, the closest thing to a hallucination rate
 BREAKS     prompt rules broken: a set that is not six tracks, or repeats an artist
 REUSE      share of picks recycled across rooms, so a lower number means it read each room

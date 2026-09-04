@@ -85,7 +85,8 @@ from what each model named and whether those records turned out to exist.
 | Gemini 2.5 Flash | Google | 97.2% | 1 | 0% | 0.39 |
 | DeepSeek R1 | DeepSeek | 94.4% | 2 | 2.8% | 0.42 |
 
-- **Findable** share of named records that resolved to a real, embeddable video.
+- **Findable** share of *checked* records that resolved to a real, embeddable video. Records not yet
+  put through `resolve.py` are counted separately and flagged, never mistaken for hallucinations.
 - **Invented** records that could not be found at all, the closest thing to a hallucination rate.
 - **Reuse** share of picks recycled across rooms. Lower means it actually read each room.
 - **Consensus** average number of *other* models that also picked each record. High means safe and
