@@ -1,0 +1,12 @@
+DJbench
+
+The setlists under data/raw are model outputs, recorded verbatim. Track titles
+and artist names are facts about existing recordings.
+
+No audio is hosted, copied or redistributed by this project. Playback happens in
+the official YouTube embedded player, and every video is checked for
+status.embeddable and region restrictions before it enters the catalog.
+
+Model names and the names of the labs that make them are used to identify what
+was benchmarked. They belong to their respective owners, and their appearance
+here is not sponsorship or endorsement.
