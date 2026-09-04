@@ -21,8 +21,20 @@ renderer. Playback is also pinned to low quality, since the projection is blurre
 and decoding HD would burn GPU for nothing. "Show video" pulls the scrim back so anyone can confirm
 the audio is real.
 
-A vote only unlocks once the listener has actually sat on both channels. Model identity stays
-hidden until the ballot is cast, so the benchmark measures the set rather than the brand.
+A vote only unlocks once the listener has actually sat on both channels.
+
+## Keeping it blind
+
+Model identity is not merely hidden in the UI, it is never sent. A battle is minted on the server
+and travels as an AES-256-GCM token; the browser receives a brief, two setlists and that token,
+with no name, lab or model id anywhere in the payload. Voting posts the token back with a side,
+and the identities come back in the response. Signing the token was not enough on its own: base64
+is an encoding, not a secret, and the first version decoded straight back to the pairing.
+
+Which model sits on deck A is randomised per battle, so side never correlates with identity.
+
+Ballots are one per pairing per voter and forty per rolling hour, keyed on a salted hash of the
+caller. Without that, a shell loop could set the leaderboard to anything.
 
 ## The roster
 
@@ -59,6 +71,11 @@ Of 185 unique records the models named, 179 resolved to a real embeddable video.
 not are themselves a result: a model that invents records is worse at this job. `compile.mjs`
 records the count per set as `dropped`.
 
+A set needs at least 4 resolved tracks to ship (`MIN_TRACKS`). A battle plays `min(lenA, lenB)`
+tracks, so pairing a 6-track set against a 5-track one means the longer set's last pick is never
+heard. Both sides are always judged over the same number of tracks, which is the property that
+matters, but the shorter set does get to hide its tail.
+
 ## Rooms
 
 The 3AM Warehouse, The Wedding at 10:15 PM, Rooftop at Golden Hour, The Last 30 Minutes,
@@ -79,8 +96,9 @@ npm run dev
 
 Environment:
 
-- `GCP_SA_KEY` (runtime): base64 of a service-account key with `roles/datastore.user`. Without it
-  the arena still works end to end and only the tally is unavailable.
+- `GCP_SA_KEY` (runtime): base64 of a service-account key with `roles/datastore.user`. It also
+  derives the key that encrypts battle tokens. Without it the arena still plays, but voting is
+  disabled and tokens fall back to a well-known development key, so only run that way locally.
 - `YOUTUBE_API_KEY` (pipeline only): used by `scripts/resolve.py` for embeddability checks.
 - Regenerating setlists additionally needs `gcloud auth application-default login`.
 
