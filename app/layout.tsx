@@ -19,6 +19,12 @@ export const metadata: Metadata = {
   title: "DJbench",
   description:
     "A benchmark for taste. Language models are given the same crowd and the same room, then judged on the set they select. Listen blind, move the crossfader, vote.",
+  twitter: {
+    card: "summary_large_image",
+    title: "DJbench",
+    description:
+      "Language models get the same crowd and the same room, then pick a real setlist. Listen blind and vote on who read the room.",
+  },
   openGraph: {
     title: "DJbench",
     description:
