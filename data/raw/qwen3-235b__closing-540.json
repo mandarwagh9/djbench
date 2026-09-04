@@ -1,0 +1,57 @@
+{
+  "djId": "qwen3-235b",
+  "briefId": "closing-540",
+  "model": "qwen/qwen3-235b-a22b-instruct-2507-maas",
+  "generatedAt": "2026-09-04T18:55:40.861Z",
+  "read": "Forty souls at dawn, tired but wired, craving emotional truth over beats.",
+  "tracks": [
+    {
+      "artist": "Joy Division",
+      "title": "Atmosphere",
+      "year": 1980,
+      "bpm": 95,
+      "why": "Haunting grace to meet the morning’s quiet judgment.",
+      "transition": "Fade into silence, then the next track’s pulse."
+    },
+    {
+      "artist": "Aphex Twin",
+      "title": "Avril 14th",
+      "year": 2001,
+      "bpm": 85,
+      "why": "Solo piano fragility to expose the raw nerve.",
+      "transition": "Let the last note decay into ambient hum."
+    },
+    {
+      "artist": "Björk",
+      "title": "Jóga",
+      "year": 1997,
+      "bpm": 90,
+      "why": "Strings swell like dawn breaking over grief.",
+      "transition": "Rise with the music into gentle forward motion."
+    },
+    {
+      "artist": "The Cinematic Orchestra",
+      "title": "To Build a Home",
+      "year": 2007,
+      "bpm": 88,
+      "why": "Piano and voice to make them feel found.",
+      "transition": "Hold the final chord, then drop the next beat."
+    },
+    {
+      "artist": "Four Tet",
+      "title": "Parallel Jalebi",
+      "year": 2020,
+      "bpm": 92,
+      "why": "Warm, looping joy to reawaken soft steps.",
+      "transition": "Layer in the rhythm, guide them toward light."
+    },
+    {
+      "artist": "Nils Frahm",
+      "title": "Says",
+      "year": 2013,
+      "bpm": 100,
+      "why": "Building hope with every synth wave to close.",
+      "transition": "Let the echo fade as doors open to daylight."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "djId": "gemini-2.5-pro",
+  "briefId": "basement-1am",
+  "model": "gemini-2.5-pro",
+  "generatedAt": "2026-09-04T18:49:19.215Z",
+  "read": "They're primed for catharsis and want anthems they can own, not just borrow from a cheap playlist.",
+  "tracks": [
+    {
+      "artist": "The Rapture",
+      "title": "House of Jealous Lovers",
+      "year": 2003,
+      "bpm": 140,
+      "why": "To weaponize the raw, chaotic energy already present in this sweaty basement.",
+      "transition": "Let the frantic cowbell and bassline ride out into a wall of feedback."
+    },
+    {
+      "artist": "Phoenix",
+      "title": "1901",
+      "year": 2009,
+      "bpm": 144,
+      "why": "Converts the chaos into pure, arms-in-the-air, melodic indie euphoria everyone knows.",
+      "transition": "Loop the final synth arpeggio, slowly filtering it into the Justice intro drums."
+    },
+    {
+      "artist": "Justice",
+      "title": "D.A.N.C.E.",
+      "year": 2007,
+      "bpm": 114,
+      "why": "The ultimate hands-up singalong, shifting the sound from guitars to iconic blog house.",
+      "transition": "Let the kids' choir fade, blending its key into Antony's soaring opening vocal."
+    },
+    {
+      "artist": "Hercules and Love Affair",
+      "title": "Blind",
+      "year": 2008,
+      "bpm": 120,
+      "why": "To bring a deeper, soulful, and legendary house groove to the floor.",
+      "transition": "Quick echo out on the final vocal, then slam in the next track's sample."
+    },
+    {
+      "artist": "Le Tigre",
+      "title": "Deceptacon",
+      "year": 1999,
+      "bpm": 162,
+      "why": "A shot of pure feminist punk energy to send the room into overdrive.",
+      "transition": "Use a short, chaotic loop of the riff to build tension before the drop."
+    },
+    {
+      "artist": "The Gossip",
+      "title": "Standing in the Way of Control (Soulwax Nite Version)",
+      "year": 2007,
+      "bpm": 135,
+      "why": "The final, relentless, cathartic knockout that leaves nothing left in the tank.",
+      "transition": "Let the pounding eight-minute techno-rock epic play out to its glorious, exhausting end."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "djId": "claude-opus-5",
+  "briefId": "basement-1am",
+  "model": "claude-opus-5",
+  "generatedAt": "2026-09-04T19:09:27.444059+00:00",
+  "read": "One clipping speaker and no monitors: I need records that survive distortion and get shouted rather than danced to.",
+  "tracks": [
+    {
+      "artist": "Sister Nancy",
+      "title": "Bam Bam",
+      "year": 1982,
+      "bpm": 96,
+      "why": "Establishes immediately that tonight is not cheap nostalgia",
+      "transition": "Let the dub delay wash into the next intro"
+    },
+    {
+      "artist": "Outkast",
+      "title": "Ms. Jackson",
+      "year": 2000,
+      "bpm": 95,
+      "why": "Everyone in this basement knows every word of verse one",
+      "transition": "Ride the outro, drop new bass under it"
+    },
+    {
+      "artist": "Gorillaz",
+      "title": "Feel Good Inc.",
+      "year": 2005,
+      "bpm": 138,
+      "why": "The bassline is the only thing this speaker reproduces well",
+      "transition": "Cut on the laugh, straight into the synth"
+    },
+    {
+      "artist": "MGMT",
+      "title": "Kids",
+      "year": 2007,
+      "bpm": 124,
+      "why": "Somebody is now standing on the sofa; that is correct",
+      "transition": "Hold the arpeggio, bring the next kick underneath"
+    },
+    {
+      "artist": "LCD Soundsystem",
+      "title": "Dance Yrself Clean",
+      "year": 2010,
+      "bpm": 115,
+      "why": "The quiet intro makes 45 people lean in, then detonates",
+      "transition": "Let the drop run full; do not touch anything"
+    },
+    {
+      "artist": "Robyn",
+      "title": "Dancing On My Own",
+      "year": 2010,
+      "bpm": 117,
+      "why": "Ends on the only record everyone here will scream",
+      "transition": "No mix out. Let it finish. Somebody will cry."
+    }
+  ]
+}

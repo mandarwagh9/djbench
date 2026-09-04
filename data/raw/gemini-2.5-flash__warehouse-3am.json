@@ -1,0 +1,57 @@
+{
+  "djId": "gemini-2.5-flash",
+  "briefId": "warehouse-3am",
+  "model": "gemini-2.5-flash",
+  "generatedAt": "2026-09-04T18:43:19.527Z",
+  "read": "Floor is receptive but needs focus; I'll drop the brightness and introduce a hypnotic, driving depth.",
+  "tracks": [
+    {
+      "artist": "Mind Against",
+      "title": "Atlant",
+      "year": 2016,
+      "bpm": 125,
+      "why": "Hypnotic, melancholic, driving. Signals a shift to deeper territory while maintaining energy.",
+      "transition": "Long, atmospheric outro, fading into the next percussive element."
+    },
+    {
+      "artist": "ANNA",
+      "title": "Journey To The Underworld",
+      "year": 2019,
+      "bpm": 127,
+      "why": "Raw, driving techno with evolving industrial textures; takes the energy deeper.",
+      "transition": "Use sustained synth pad and driving rhythm to blend into more percussive track."
+    },
+    {
+      "artist": "Raxon",
+      "title": "Majestic",
+      "year": 2018,
+      "bpm": 126,
+      "why": "Hypnotic, tribal-infused groove with atmospheric touches, locking in the floor.",
+      "transition": "Loop a percussive element, filter out melodics, intro stripped-back track."
+    },
+    {
+      "artist": "Fideles",
+      "title": "Endless Sea",
+      "year": 2019,
+      "bpm": 124,
+      "why": "Hypnotic arpeggios and emotional depth provide introspection and groove.",
+      "transition": "Ride out arpeggios and sustained pads, blending into a deeper, faster groove."
+    },
+    {
+      "artist": "KAS:ST",
+      "title": "VTOPIA",
+      "year": 2020,
+      "bpm": 126,
+      "why": "Evolving, dark melody over a driving beat, creating intense, captivating immersion.",
+      "transition": "Isolate main synth line, layer new kick, and build into final peak."
+    },
+    {
+      "artist": "Wehbba",
+      "title": "Dynamo",
+      "year": 2020,
+      "bpm": 130,
+      "why": "Relentless, hypnotic percussion and driving bassline for an exhilarating, deep, final push.",
+      "transition": "Let the intense groove ride out, ready for a new chapter."
+    }
+  ]
+}

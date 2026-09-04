@@ -1,0 +1,57 @@
+{
+  "djId": "deepseek-r1",
+  "briefId": "warehouse-3am",
+  "model": "deepseek-ai/deepseek-r1-0528-maas",
+  "generatedAt": "2026-09-04T18:52:58.017Z",
+  "read": "Tired but committed crowd needs hypnotic groove to sink deeper without jarring shift.",
+  "tracks": [
+    {
+      "artist": "Rødhad",
+      "title": "Let Me Go",
+      "year": 2016,
+      "bpm": 127,
+      "why": "Deep bassline anchors drifting crowd, lowering energy subtly.",
+      "transition": "Layer next drum-loop during atmospheric outro."
+    },
+    {
+      "artist": "Abdulla Rashim",
+      "title": "Al Rifai",
+      "year": 2014,
+      "bpm": 125,
+      "why": "Hypnotic loops deepen immersion with mesmeric synths.",
+      "transition": "Fade drone into Developer's rolling bassline."
+    },
+    {
+      "artist": "Developer",
+      "title": "Reflection",
+      "year": 2011,
+      "bpm": 124,
+      "why": "Rolling rhythm locks groove, amplifies warehouse acoustics.",
+      "transition": "Match hi-hats with Klock's kick entry."
+    },
+    {
+      "artist": "Ben Klock",
+      "title": "Subzero",
+      "year": 2009,
+      "bpm": 125,
+      "why": "Iconic bass-driven tension rebuilds energy hypnotically.",
+      "transition": "Drop DVS1's kick during open-hat phrase."
+    },
+    {
+      "artist": "DVS1",
+      "title": "Black Russian",
+      "year": 2011,
+      "bpm": 124,
+      "why": "Pounding bass creates cavernous, immersive atmosphere.",
+      "transition": "Blend garage synth over fading resonance."
+    },
+    {
+      "artist": "Blawan",
+      "title": "Why They Hide Their Bodies Under My Garage",
+      "year": 2012,
+      "bpm": 124,
+      "why": "Unsettling groove locks floor in hypnotic darkness.",
+      "transition": "Loop percussion outro for smooth handover next."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "djId": "claude-opus-5",
+  "briefId": "mainstage-peak",
+  "model": "claude-opus-5",
+  "generatedAt": "2026-09-04T19:09:27.444059+00:00",
+  "read": "Legibility is the entire job: every record must be recognised in four bars by someone who does not like dance music.",
+  "tracks": [
+    {
+      "artist": "Daft Punk",
+      "title": "One More Time",
+      "year": 2000,
+      "bpm": 123,
+      "why": "Fifteen thousand people know bar one; nobody is excluded",
+      "transition": "Ride the horns, slam the next kick on the drop"
+    },
+    {
+      "artist": "Avicii",
+      "title": "Levels",
+      "year": 2011,
+      "bpm": 126,
+      "why": "Phones go up on the Etta sample, exactly as intended",
+      "transition": "Cut to the next intro on the last bar of the build"
+    },
+    {
+      "artist": "Swedish House Mafia",
+      "title": "Don't You Worry Child",
+      "year": 2012,
+      "bpm": 129,
+      "why": "Buys a singalong, which is the only rest a peak set gets",
+      "transition": "Hold the vocal a cappella over the next four bars"
+    },
+    {
+      "artist": "Zombie Nation",
+      "title": "Kernkraft 400",
+      "year": 1999,
+      "bpm": 138,
+      "why": "Wordless, tempo jumps twelve BPM and nobody objects",
+      "transition": "Straight cut, no blend, let the gap land"
+    },
+    {
+      "artist": "Darude",
+      "title": "Sandstorm",
+      "year": 1999,
+      "bpm": 136,
+      "why": "The most legible record ever made from 200 metres back",
+      "transition": "Loop the riser, hold it four bars too long"
+    },
+    {
+      "artist": "The Prodigy",
+      "title": "Firestarter",
+      "year": 1996,
+      "bpm": 140,
+      "why": "Ends hardest, on a guitar, so even the sceptics get it",
+      "transition": "Kill it dead on the last stab. CO2. Done."
+    }
+  ]
+}

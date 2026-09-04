@@ -1,0 +1,57 @@
+{
+  "djId": "deepseek-r1",
+  "briefId": "basement-1am",
+  "model": "deepseek-ai/deepseek-r1-0528-maas",
+  "generatedAt": "2026-09-04T18:55:20.030Z",
+  "read": "Intimate late-night energy craving genuine sing-along moments without cliché nostalgia.",
+  "tracks": [
+    {
+      "artist": "LCD Soundsystem",
+      "title": "Daft Punk Is Playing at My House",
+      "year": 2005,
+      "bpm": 122,
+      "why": "Raw indie-dance intro, shout-along vocals.",
+      "transition": "Overlap drum outro with next track's beat"
+    },
+    {
+      "artist": "MGMT",
+      "title": "Electric Feel",
+      "year": 2008,
+      "bpm": 125,
+      "why": "Builds groove, familiar psychedelic hooks.",
+      "transition": "Fade synth outro into bassline intro"
+    },
+    {
+      "artist": "Yeah Yeah Yeahs",
+      "title": "Heads Will Roll",
+      "year": 2009,
+      "bpm": 127,
+      "why": "Driving energy, crowd shouts chorus.",
+      "transition": "Filtered bridge into beat drop"
+    },
+    {
+      "artist": "Bloc Party",
+      "title": "Banquet",
+      "year": 2005,
+      "bpm": 137,
+      "why": "Indie-disco anthem, guitar-fueled sing-along.",
+      "transition": "Echo guitar riff into synth swell"
+    },
+    {
+      "artist": "Outkast",
+      "title": "Hey Ya!",
+      "year": 2003,
+      "bpm": 160,
+      "why": "Explosive sing-along peak energy.",
+      "transition": "Cut to acapella intro tweak"
+    },
+    {
+      "artist": "Rihanna",
+      "title": "We Found Love",
+      "year": 2011,
+      "bpm": 128,
+      "why": "Cathartic EMD finale, euphoric unity.",
+      "transition": "Full track climax, end set"
+    }
+  ]
+}

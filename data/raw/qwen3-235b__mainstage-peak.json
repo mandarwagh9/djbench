@@ -1,0 +1,57 @@
+{
+  "djId": "qwen3-235b",
+  "briefId": "mainstage-peak",
+  "model": "qwen/qwen3-235b-a22b-instruct-2507-maas",
+  "generatedAt": "2026-09-04T18:55:44.697Z",
+  "read": "Crowd is primed for euphoria—big melodies, explosive drops, zero patience for buildup.",
+  "tracks": [
+    {
+      "artist": "Martin Garrix",
+      "title": "Animals",
+      "year": 2013,
+      "bpm": 128,
+      "why": "Instant recognition, raw energy, ignites the entire field.",
+      "transition": "Cut silence into next drop for maximum impact."
+    },
+    {
+      "artist": "Hardwell",
+      "title": "Don't Stop the Party",
+      "year": 2012,
+      "bpm": 128,
+      "why": "Vocal hook unites crowd, relentless forward drive.",
+      "transition": "Loop snare roll to launch into next anthem."
+    },
+    {
+      "artist": "Avicii",
+      "title": "Wake Me Up",
+      "year": 2013,
+      "bpm": 124,
+      "why": "Folk-house fusion lifts mood, universal singalong moment.",
+      "transition": "Pitch up vocal into next track's intro."
+    },
+    {
+      "artist": "Calvin Harris",
+      "title": "Summer",
+      "year": 2014,
+      "bpm": 128,
+      "why": "Nostalgic euphoria, sun-soaked energy for mass release.",
+      "transition": "Echo the final chord into next build."
+    },
+    {
+      "artist": "Zedd",
+      "title": "Clarity",
+      "year": 2012,
+      "bpm": 128,
+      "why": "Emotional vocal peak, crystal synths cut through air.",
+      "transition": "Fade reverb into next beat's kick."
+    },
+    {
+      "artist": "Swedish House Mafia",
+      "title": "Don't You Worry Child",
+      "year": 2012,
+      "bpm": 124,
+      "why": "Cathartic closer—arms up, lights high, moment sealed.",
+      "transition": "Hold final chord, then silence. Walk off."
+    }
+  ]
+}

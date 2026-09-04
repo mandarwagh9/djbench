@@ -1,0 +1,62 @@
+[
+  {
+    "id": "gemini-2.5-pro",
+    "name": "Gemini 2.5 Pro",
+    "lab": "Google",
+    "short": "GEM-P",
+    "accent": "#4E9BFF",
+    "provider": "vertex-gemini",
+    "model": "gemini-2.5-pro",
+    "location": "global"
+  },
+  {
+    "id": "gemini-2.5-flash",
+    "name": "Gemini 2.5 Flash",
+    "lab": "Google",
+    "short": "GEM-F",
+    "accent": "#00C2A8",
+    "provider": "vertex-gemini",
+    "model": "gemini-2.5-flash",
+    "location": "global"
+  },
+  {
+    "id": "gpt-oss-120b",
+    "name": "GPT-OSS 120B",
+    "lab": "OpenAI",
+    "short": "OSS",
+    "accent": "#9CE86B",
+    "provider": "vertex-openapi",
+    "model": "openai/gpt-oss-120b-maas",
+    "location": "us-central1"
+  },
+  {
+    "id": "deepseek-r1",
+    "name": "DeepSeek R1",
+    "lab": "DeepSeek",
+    "short": "R1",
+    "accent": "#6F7BFF",
+    "provider": "vertex-openapi",
+    "model": "deepseek-ai/deepseek-r1-0528-maas",
+    "location": "us-central1"
+  },
+  {
+    "id": "qwen3-235b",
+    "name": "Qwen3 235B",
+    "lab": "Alibaba",
+    "short": "QWEN",
+    "accent": "#FF8A3D",
+    "provider": "vertex-openapi",
+    "model": "qwen/qwen3-235b-a22b-instruct-2507-maas",
+    "location": "us-south1"
+  },
+  {
+    "id": "claude-opus-5",
+    "name": "Claude Opus 5",
+    "lab": "Anthropic",
+    "short": "OPUS",
+    "accent": "#E8734A",
+    "provider": "anthropic-session",
+    "model": "claude-opus-5",
+    "location": "-"
+  }
+]

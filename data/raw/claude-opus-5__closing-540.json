@@ -1,0 +1,57 @@
+{
+  "djId": "claude-opus-5",
+  "briefId": "closing-540",
+  "model": "claude-opus-5",
+  "generatedAt": "2026-09-04T19:09:27.444059+00:00",
+  "read": "Forty people chose to still be here; I owe them honesty, not another peak. Records that say goodbye out loud.",
+  "tracks": [
+    {
+      "artist": "Moderat",
+      "title": "A New Error",
+      "year": 2009,
+      "bpm": 120,
+      "why": "Signals the descent without announcing that it is over",
+      "transition": "Let the arp thin out to nothing"
+    },
+    {
+      "artist": "Kiasmos",
+      "title": "Blurred",
+      "year": 2014,
+      "bpm": 118,
+      "why": "Strings arrive; the room quietly understands what this is",
+      "transition": "Hold the piano over the next intro"
+    },
+    {
+      "artist": "Four Tet",
+      "title": "Angel Echoes",
+      "year": 2010,
+      "bpm": 112,
+      "why": "A human voice, chopped. The first real emotion of the hour",
+      "transition": "Fade in on the vocal loop, no beat"
+    },
+    {
+      "artist": "Burial",
+      "title": "Archangel",
+      "year": 2007,
+      "bpm": 138,
+      "why": "The lights are already up; this is the sound of that",
+      "transition": "Drop the drums, keep the vocal in reverb"
+    },
+    {
+      "artist": "Jon Hopkins",
+      "title": "Immunity",
+      "year": 2013,
+      "bpm": 100,
+      "why": "Piano and breath. Nobody is dancing and nobody minds",
+      "transition": "Let it end fully; give the room two seconds of silence"
+    },
+    {
+      "artist": "Brian Eno",
+      "title": "An Ending (Ascent)",
+      "year": 1983,
+      "bpm": 60,
+      "why": "Not a track, a door held open. They walk out through it",
+      "transition": "No transition. House lights."
+    }
+  ]
+}

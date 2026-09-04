@@ -1,0 +1,57 @@
+{
+  "djId": "claude-opus-5",
+  "briefId": "warehouse-3am",
+  "model": "claude-opus-5",
+  "generatedAt": "2026-09-04T19:09:27.444059+00:00",
+  "read": "They are bright-fatigued, not tired; I hold the tempo and take away the top end until the low mids do the work.",
+  "tracks": [
+    {
+      "artist": "Objekt",
+      "title": "Ganzfeld",
+      "year": 2014,
+      "bpm": 128,
+      "why": "Kills the brightness in one bar without dropping tempo",
+      "transition": "Let its texture rot underneath the next kick"
+    },
+    {
+      "artist": "Donato Dozzy",
+      "title": "Parola",
+      "year": 2011,
+      "bpm": 126,
+      "why": "Pure hypnosis; the floor stops watching and starts sinking",
+      "transition": "Ride the loop, swap kicks on the bar"
+    },
+    {
+      "artist": "Ben Klock",
+      "title": "Subzero",
+      "year": 2009,
+      "bpm": 128,
+      "why": "Reintroduces weight from below, not brightness from above",
+      "transition": "Long blend, hold both hats for sixteen"
+    },
+    {
+      "artist": "Function",
+      "title": "Voiceprint",
+      "year": 2013,
+      "bpm": 129,
+      "why": "Adds a human ghost so the depth stops feeling clinical",
+      "transition": "Filter its pads up as the next intro lands"
+    },
+    {
+      "artist": "Skudge",
+      "title": "Phantom",
+      "year": 2010,
+      "bpm": 127,
+      "why": "Dub-techno swing loosens hips that had locked rigid",
+      "transition": "Cut the low, let reverb carry the gap"
+    },
+    {
+      "artist": "Rrose",
+      "title": "Waterfall",
+      "year": 2012,
+      "bpm": 130,
+      "why": "Ends deeper and harder. Going down was going forward",
+      "transition": "Hand over at 130 with all top end still stripped"
+    }
+  ]
+}

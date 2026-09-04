@@ -1,0 +1,57 @@
+{
+  "djId": "deepseek-r1",
+  "briefId": "rooftop-golden",
+  "model": "deepseek-ai/deepseek-r1-0528-maas",
+  "generatedAt": "2026-09-04T18:53:46.003Z",
+  "read": "Sunset rooftop energy calls for deep, hypnotic grooves that entice without urgency.",
+  "tracks": [
+    {
+      "artist": "Nils Frahm",
+      "title": "Says",
+      "year": 2013,
+      "bpm": 105,
+      "why": "Atmospheric pulse mirrors dusk warmth; invites absorption",
+      "transition": "Fade bassline into Moodymann's rhythm as textures dissolve"
+    },
+    {
+      "artist": "Moodymann",
+      "title": "I Can't Kick This Feelin When It Hits",
+      "year": 1997,
+      "bpm": 119,
+      "why": "Jazzy groove anchors ears, adds swayable deep vibe",
+      "transition": "Layer Kerri Chandler's piano as vocal samples loop"
+    },
+    {
+      "artist": "Kerri Chandler",
+      "title": "Rain",
+      "year": 2000,
+      "bpm": 122,
+      "why": "Soulful keys escalate warmth; crowd begins communal hum",
+      "transition": "Build percussion then drop into Villalobos' acidic bass"
+    },
+    {
+      "artist": "Ricardo Villalobos",
+      "title": "Dexter",
+      "year": 2005,
+      "bpm": 124,
+      "why": "Minimal funk hypnotizes; hints at night's momentum",
+      "transition": "Loop synth phrase, mix motorik drums of Motor City"
+    },
+    {
+      "artist": "Motor City Drum Ensemble",
+      "title": "Raw Cuts #1",
+      "year": 2009,
+      "bpm": 126,
+      "why": "Driving organ hooks demand subtle body movement",
+      "transition": "Peak synth arpeggio, bleed into Bicep's crescendo"
+    },
+    {
+      "artist": "Bicep",
+      "title": "Glue",
+      "year": 2017,
+      "bpm": 123,
+      "why": "Euphoric release lifts eyes skyward, first dancers emerge",
+      "transition": "Hold final chord decay prepping darker second hour"
+    }
+  ]
+}

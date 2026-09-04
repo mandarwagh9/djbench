@@ -1,0 +1,57 @@
+{
+  "djId": "qwen3-235b",
+  "briefId": "rooftop-golden",
+  "model": "qwen/qwen3-235b-a22b-instruct-2507-maas",
+  "generatedAt": "2026-09-04T18:55:36.717Z",
+  "read": "Warm glow, early chatter, drinks in hand—ease them in with soulful depth, not forced energy.",
+  "tracks": [
+    {
+      "artist": "Khruangbin",
+      "title": "Maria También",
+      "year": 2017,
+      "bpm": 96,
+      "why": "Hypnotic groove, global vibe, lets the space breathe and connect.",
+      "transition": "Fade out slowly, slide into Rhodes chords of next track."
+    },
+    {
+      "artist": "Jose Gonzalez",
+      "title": "Heartbeats",
+      "year": 2003,
+      "bpm": 100,
+      "why": "Familiar melody, intimate tension, draws listeners inward, not outward.",
+      "transition": "Echo the final note, bring in soft disco pulse underneath."
+    },
+    {
+      "artist": "Amy Winehouse",
+      "title": "You Know I'm No Good",
+      "year": 2006,
+      "bpm": 104,
+      "why": "Sinister swing, magnetic attitude, shifts mood from chill to charged.",
+      "transition": "Extend drum break, pitch up slightly into next groove."
+    },
+    {
+      "artist": "Todd Terje",
+      "title": "Inspector Norse",
+      "year": 2012,
+      "bpm": 120,
+      "why": "Uplifting, quirky disco—makes people glance up and smile.",
+      "transition": "Loop the riff, layer in house beat, shift key up."
+    },
+    {
+      "artist": "Caribou",
+      "title": "Can't Do Without You",
+      "year": 2014,
+      "bpm": 124,
+      "why": "Emotional peak, swirling build—pulls the crowd into unity.",
+      "transition": "Fade vocals, isolate bassline, morph into techno pulse."
+    },
+    {
+      "artist": "Bicep",
+      "title": "Glue",
+      "year": 2017,
+      "bpm": 126,
+      "why": "Euphoric release, arms-aloft moment—holds the night aloft.",
+      "transition": "Let reverb fade, introduce ambient synth for next set."
+    }
+  ]
+}

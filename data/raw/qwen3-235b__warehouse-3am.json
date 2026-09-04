@@ -1,0 +1,57 @@
+{
+  "djId": "qwen3-235b",
+  "briefId": "warehouse-3am",
+  "model": "qwen/qwen3-235b-a22b-instruct-2507-maas",
+  "generatedAt": "2026-09-04T18:55:27.082Z",
+  "read": "The crowd is deep but fraying—pull them into a darker, slower pull without breaking stride.",
+  "tracks": [
+    {
+      "artist": "Rhythm & Sound",
+      "title": "Bam Bam",
+      "year": 2001,
+      "bpm": 122,
+      "why": "Drops the pace subtly, introduces dub weight without losing pulse.",
+      "transition": "Let the echo fade into silence, then inject kick."
+    },
+    {
+      "artist": "Silent Servant",
+      "title": "Death of a Latin Lover",
+      "year": 2012,
+      "bpm": 124,
+      "why": "Cold wave pulse re-engages feet, dark synth pulls focus deeper.",
+      "transition": "Loop the bassline to fuse with next intro."
+    },
+    {
+      "artist": "Regis",
+      "title": "Fused",
+      "year": 1998,
+      "bpm": 126,
+      "why": "Steel-toed groove locks the floor back into unity.",
+      "transition": "Filter out to leave only static, then drop beat."
+    },
+    {
+      "artist": "Erika de Casier",
+      "title": "Someone That Loves Me",
+      "year": 2022,
+      "bpm": 128,
+      "why": "Human voice and soulful synth lift without lightening the mood.",
+      "transition": "Fade vocal into reverb tail, cue next kick."
+    },
+    {
+      "artist": "Function",
+      "title": "Incubation (Phase 3)",
+      "year": 2012,
+      "bpm": 127,
+      "why": "Hypnotic, rolling pressure—holds emotion in suspended motion.",
+      "transition": "Loop the pulse, slow decay into next rhythm."
+    },
+    {
+      "artist": "Blawan",
+      "title": "Why They Hide Their Bodies Under My Garage?",
+      "year": 2012,
+      "bpm": 128,
+      "why": "Raw, industrial tension—pushes edge without breaking the trance.",
+      "transition": "End on final hit, let silence crackle before next drop."
+    }
+  ]
+}

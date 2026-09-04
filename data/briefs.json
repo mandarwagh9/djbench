@@ -1,0 +1,62 @@
+[
+  {
+    "id": "warehouse-3am",
+    "code": "01",
+    "title": "The 3AM Warehouse",
+    "venue": "Concrete warehouse, Berlin. One room, no windows, fog to the knees.",
+    "clock": "03:47",
+    "crowd": "400 people, six hours in. The floor is locked but starting to drift.",
+    "situation": "You have the room. Now take them deeper without losing a single one. The previous DJ left you at 128 BPM and slightly too bright.",
+    "accent": "#5B8CFF"
+  },
+  {
+    "id": "wedding-1015",
+    "code": "02",
+    "title": "The Wedding, 10:15 PM",
+    "venue": "Function hall. Parquet floor, fairy lights, an open bar that has been open a while.",
+    "clock": "22:15",
+    "crowd": "120 guests aged 8 to 80. Three generations, one floor.",
+    "situation": "Dinner is cleared and the floor is half full. Nobody can be left standing at the edge. You need the grandmother and the groomsmen dancing to the same record.",
+    "accent": "#FF6B9D"
+  },
+  {
+    "id": "rooftop-golden",
+    "code": "03",
+    "title": "Rooftop, Golden Hour",
+    "venue": "Eighth-floor rooftop. Low sun, warm concrete, a city going orange.",
+    "clock": "19:20",
+    "crowd": "80 people arriving with first drinks. Nobody is dancing yet.",
+    "situation": "Nobody should be dancing yet. Your job is the next four hours, not the next four minutes. Build a room people do not want to leave.",
+    "accent": "#FFA552"
+  },
+  {
+    "id": "closing-540",
+    "code": "04",
+    "title": "The Last 30 Minutes",
+    "venue": "Small club, lights already coming up at the edges.",
+    "clock": "05:40",
+    "crowd": "40 people left. Every one of them chose to still be here.",
+    "situation": "This is the closing set. No more peaks. Send them out into the morning feeling something they did not walk in with.",
+    "accent": "#B47CFF"
+  },
+  {
+    "id": "mainstage-peak",
+    "code": "05",
+    "title": "Main Stage, Peak",
+    "venue": "Festival main stage. Full rig, CO2 jets, a horizon of people.",
+    "clock": "21:00",
+    "crowd": "15,000 people, phones already up, waiting to be detonated.",
+    "situation": "This is your peak-time slot. Maximum energy, zero subtlety permitted. Every track must be legible to someone 200 metres back who is not a dance music fan.",
+    "accent": "#FF4D4D"
+  },
+  {
+    "id": "basement-1am",
+    "code": "06",
+    "title": "The Basement, 1AM",
+    "venue": "House party basement. One speaker clipping, low ceiling, condensation on the walls.",
+    "clock": "01:00",
+    "crowd": "45 people, sweaty, close friends and their friends.",
+    "situation": "No booth, no monitors, someone is standing on the sofa. Everyone needs to know the words to something. Nostalgia is a weapon here, but cheap nostalgia will empty the room.",
+    "accent": "#4DD9A8"
+  }
+]

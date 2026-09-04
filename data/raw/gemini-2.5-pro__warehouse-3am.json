@@ -1,0 +1,57 @@
+{
+  "djId": "gemini-2.5-pro",
+  "briefId": "warehouse-3am",
+  "model": "gemini-2.5-pro",
+  "generatedAt": "2026-09-04T18:46:17.733Z",
+  "read": "The floor is ready for a hypnotic reset, craving deep, psychedelic textures over bright, peak-time energy to get properly lost in the fog.",
+  "tracks": [
+    {
+      "artist": "The Mole",
+      "title": "Lockdown Party (DJ Sprinkles' Crossfaderama)",
+      "year": 2012,
+      "bpm": 122,
+      "why": "Immediately drop the BPM and shift the mood from bright to deep, intellectual house.",
+      "transition": "Let the vocal fade out over the stripped-back percussive loop of the next track."
+    },
+    {
+      "artist": "Petre Inspirescu",
+      "title": "Sakadat",
+      "year": 2009,
+      "bpm": 124,
+      "why": "Establish a hypnotic, percussive groove that locks everyone into a shared, swaying rhythm.",
+      "transition": "Blend the intricate hi-hats into the atmospheric, acidic wash of the incoming record."
+    },
+    {
+      "artist": "Donato Dozzy & Neel",
+      "title": "Parola",
+      "year": 2013,
+      "bpm": 125,
+      "why": "Introduce a relentless, psychedelic arpeggio that elevates intensity without raising the tempo much.",
+      "transition": "Loop the final arp, filtering it down into the rumbling kick of the next."
+    },
+    {
+      "artist": "Voices From The Lake",
+      "title": "S.T. (VFTL Rework)",
+      "year": 2012,
+      "bpm": 126,
+      "why": "This is the bottom of the well; pure, dubby, hypnotic techno immersion.",
+      "transition": "Let the cavernous reverb wash out, leaving one delayed stab echoing into silence."
+    },
+    {
+      "artist": "Recondite",
+      "title": "Cleric",
+      "year": 2012,
+      "bpm": 126,
+      "why": "Begin the ascent with a melancholic but driving energy, introducing an emotional core.",
+      "transition": "Cut the bass and mix the new kick in clean for maximum emotional impact."
+    },
+    {
+      "artist": "Planetary Assault Systems",
+      "title": "Rip The Cut",
+      "year": 2011,
+      "bpm": 129,
+      "why": "The cathartic release: a raw, powerful tool with an unforgettable, classic synth hook.",
+      "transition": "Let the synth hook ride, using a long delay to deconstruct the final rhythm."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "djId": "gpt-oss-120b",
+  "briefId": "warehouse-3am",
+  "model": "openai/gpt-oss-120b-maas",
+  "generatedAt": "2026-09-04T18:49:50.373Z",
+  "read": "The crowd is drifting, craving deeper, darker grooves to pull them back into the night’s pulse.",
+  "tracks": [
+    {
+      "artist": "Maceo Plex",
+      "title": "Solar Detroit",
+      "year": 2011,
+      "bpm": 124,
+      "why": "Darker vibe, smooth drop from bright, maintains 124 BPM flow.",
+      "transition": "Fade synth, introduce Tale Of Us' ethereal pads as beat aligns."
+    },
+    {
+      "artist": "Tale Of Us",
+      "title": "Another Earth",
+      "year": 2015,
+      "bpm": 123,
+      "why": "Melodic techno deepens mood, gently nudges tempo lower.",
+      "transition": "Loop outro, blend in Ben Klock's rolling bass under same key."
+    },
+    {
+      "artist": "Ben Klock",
+      "title": "Subzero",
+      "year": 2015,
+      "bpm": 122,
+      "why": "Minimal drive, stripped back, guides audience further inward.",
+      "transition": "Drop kick, filter sweep into Rødhåd's dark groove."
+    },
+    {
+      "artist": "Rødhåd",
+      "title": "Kinder Der Ringwelt",
+      "year": 2019,
+      "bpm": 119,
+      "why": "Brooding bassline deepens darkness, tempo slides toward 119.",
+      "transition": "Gradual low-pass fade, bring Dax J's pounding synths."
+    },
+    {
+      "artist": "Dax J",
+      "title": "The Arrival",
+      "year": 2017,
+      "bpm": 117,
+      "why": "Industrial energy escalates, pulling crowd into intense focus.",
+      "transition": "Cut high mids, introduce Petrie's ambient textures for final descent."
+    },
+    {
+      "artist": "Petrie",
+      "title": "Androntic",
+      "year": 2018,
+      "bpm": 115,
+      "why": "Hypnotic close, low BPM resolves journey, leaving lingering echoes.",
+      "transition": "Let groove breathe, fade into sunrise silence."
+    }
+  ]
+}

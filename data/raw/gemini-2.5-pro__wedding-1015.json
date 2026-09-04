@@ -1,0 +1,57 @@
+{
+  "djId": "gemini-2.5-pro",
+  "briefId": "wedding-1015",
+  "model": "gemini-2.5-pro",
+  "generatedAt": "2026-09-04T18:46:51.397Z",
+  "read": "The room is warm and ready, needing a soulful, familiar catalyst to unite generations and ignite the dance floor for the night.",
+  "tracks": [
+    {
+      "artist": "Stevie Wonder",
+      "title": "Signed, Sealed, Delivered I'm Yours",
+      "year": 1970,
+      "bpm": 109,
+      "why": "An undeniable, cross-generational classic that invites everyone to the floor with pure joy.",
+      "transition": "Use the final horn stabs to cut into a classic disco bassline."
+    },
+    {
+      "artist": "Chic",
+      "title": "Good Times",
+      "year": 1979,
+      "bpm": 110,
+      "why": "The ultimate cool bassline; sophisticated, universally known, and effortlessly groovy for all.",
+      "transition": "Let the bassline ride, then loop and filter it into a faster tempo."
+    },
+    {
+      "artist": "Jamiroquai",
+      "title": "Canned Heat",
+      "year": 1999,
+      "bpm": 128,
+      "why": "A massive, euphoric disco-funk injection that brings pure energy and a familiar kick.",
+      "transition": "Ride the string breakdown then slam into the next track's iconic synth intro."
+    },
+    {
+      "artist": "Whitney Houston",
+      "title": "I Wanna Dance with Somebody (Who Loves Me)",
+      "year": 1987,
+      "bpm": 119,
+      "why": "The absolute peak-time singalong anthem. Pure, explosive, unadulterated joy for every single person.",
+      "transition": "Let the final chorus echo out, then cold drop the next track's beat."
+    },
+    {
+      "artist": "Montell Jordan",
+      "title": "This Is How We Do It",
+      "year": 1995,
+      "bpm": 104,
+      "why": "A smooth, undeniable 90s party joint to switch the vibe but keep grooving.",
+      "transition": "Use the outro vocal riff to blend smoothly into another soulful classic."
+    },
+    {
+      "artist": "Bill Withers",
+      "title": "Lovely Day",
+      "year": 1977,
+      "bpm": 98,
+      "why": "A timeless, soulful reset; bringing everyone together with an overwhelmingly positive, easy groove.",
+      "transition": "Fade out on the iconic held note, leaving a moment of pure warmth."
+    }
+  ]
+}

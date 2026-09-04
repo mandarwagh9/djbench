@@ -1,0 +1,57 @@
+{
+  "djId": "claude-opus-5",
+  "briefId": "wedding-1015",
+  "model": "claude-opus-5",
+  "generatedAt": "2026-09-04T19:09:27.444059+00:00",
+  "read": "The floor is half full because no generation wants to commit first; I play one record all three already love so they arrive together.",
+  "tracks": [
+    {
+      "artist": "Earth, Wind & Fire",
+      "title": "September",
+      "year": 1978,
+      "bpm": 126,
+      "why": "The single record no generation in this room refuses",
+      "transition": "Straight cut on the horn stab, no gap"
+    },
+    {
+      "artist": "Stevie Wonder",
+      "title": "Signed, Sealed, Delivered I'm Yours",
+      "year": 1970,
+      "bpm": 108,
+      "why": "Pulls the oldest guests in while the young stay moving",
+      "transition": "Ride the outro clap into the next intro"
+    },
+    {
+      "artist": "ABBA",
+      "title": "Dancing Queen",
+      "year": 1976,
+      "bpm": 101,
+      "why": "The grandmothers now own the floor and everyone allows it",
+      "transition": "Let the piano ring, drop straight in"
+    },
+    {
+      "artist": "Whitney Houston",
+      "title": "I Wanna Dance with Somebody",
+      "year": 1987,
+      "bpm": 119,
+      "why": "Hands the room back to the middle generation without ejecting anyone",
+      "transition": "Cut on the last chorus, no long tail"
+    },
+    {
+      "artist": "Michael Jackson",
+      "title": "Wanna Be Startin' Somethin'",
+      "year": 1982,
+      "bpm": 122,
+      "why": "Raises tempo where nobody notices they are working harder",
+      "transition": "Run the chant under the next four bars"
+    },
+    {
+      "artist": "Outkast",
+      "title": "Hey Ya!",
+      "year": 2003,
+      "bpm": 160,
+      "why": "Ends on the groomsmen without ever having lost the grandmother",
+      "transition": "Leave them shouting; house lights, not another record"
+    }
+  ]
+}

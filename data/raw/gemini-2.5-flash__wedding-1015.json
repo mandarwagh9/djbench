@@ -1,0 +1,57 @@
+{
+  "djId": "gemini-2.5-flash",
+  "briefId": "wedding-1015",
+  "model": "gemini-2.5-flash",
+  "generatedAt": "2026-09-04T18:43:48.785Z",
+  "read": "The room needs warmth and universal appeal; I’m building momentum gently to get all ages dancing together.",
+  "tracks": [
+    {
+      "artist": "Stevie Wonder",
+      "title": "Signed, Sealed, Delivered I'm Yours",
+      "year": 1970,
+      "bpm": 110,
+      "why": "Universal joy, perfect tempo to ease everyone onto the floor.",
+      "transition": "Keep the groove warm, subtly pick up the pace and funk."
+    },
+    {
+      "artist": "Jackson 5",
+      "title": "Blame It on the Boogie",
+      "year": 1978,
+      "bpm": 113,
+      "why": "Infectious groove, familiar, makes everyone want to move.",
+      "transition": "Step up the energy with an anthem of pure, irresistible joy."
+    },
+    {
+      "artist": "Earth, Wind & Fire",
+      "title": "September",
+      "year": 1978,
+      "bpm": 126,
+      "why": "Irresistible feel-good, pure joy, gets every generation dancing.",
+      "transition": "Maintain high energy with an iconic, empowering pop anthem."
+    },
+    {
+      "artist": "Whitney Houston",
+      "title": "I Wanna Dance with Somebody (Who Loves Me)",
+      "year": 1987,
+      "bpm": 119,
+      "why": "Universal singalong, pure exuberance, unites all ages on the floor.",
+      "transition": "Keep the party vibe with an absolute classic disco-funk mover."
+    },
+    {
+      "artist": "Chic",
+      "title": "Le Freak",
+      "year": 1978,
+      "bpm": 120,
+      "why": "Iconic, irresistible groove, everyone knows it, pure dance.",
+      "transition": "Move into a classic, fun 80s hip-hop/dance floor filler."
+    },
+    {
+      "artist": "Salt-N-Pepa",
+      "title": "Push It",
+      "year": 1987,
+      "bpm": 129,
+      "why": "Infectious, fun, gets everyone moving with attitude and energy.",
+      "transition": "This set concludes with undeniable energy and attitude."
+    }
+  ]
+}

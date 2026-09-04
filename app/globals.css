@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+/* DJbench console tokens.
+   Theme is locked dark on purpose: the product is a DJ booth, and a booth is dark.
+   Shape system: panels square (0), controls 2px, only fader caps are pill. */
+@theme {
+  --color-base: #0a0a0b;
+  --color-panel: #131316;
+  --color-raised: #1a1a1f;
+  --color-hairline: #2a2a31;
+  --color-ink: #ececef;
+  --color-muted: #8b8b95;
+  --color-dim: #5c5c66;
+  --color-cha: #d6f94a;
+  --color-chb: #4ad9f9;
+  --color-live: #ff5c4d;
+
+  --font-display: var(--font-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-mono-jb), ui-monospace, monospace;
+}
+
+:root {
+  color-scheme: dark;
+  --r-control: 2px;
+}
+
+html,
+body {
+  background: var(--color-base);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-display);
+  overscroll-behavior-y: none;
+}
+
+/* Numerals in a console are data: always mono, always tabular. */
+.tnum {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+.hair {
+  border-color: var(--color-hairline);
+}
+
+/* Fine grid etched into the console face. Fixed and inert so it never repaints on scroll. */
+.etch {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.022) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.022) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+/* Brushed-metal sheen on control surfaces. */
+.face {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0) 42%),
+    var(--color-panel);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+button {
+  cursor: pointer;
+}
+button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+button:disabled {
+  cursor: not-allowed;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-cha);
+  outline-offset: 2px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 46px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #4a4a54, #232329);
+  border: 1px solid #55555f;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.22);
+  cursor: grab;
+}
+input[type="range"]:active::-webkit-slider-thumb {
+  cursor: grabbing;
+}
+input[type="range"]::-moz-range-thumb {
+  width: 30px;
+  height: 46px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #4a4a54, #232329);
+  border: 1px solid #55555f;
+  cursor: grab;
+}
+
+@keyframes pulse-live {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+.live-dot {
+  animation: pulse-live 1.6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .live-dot {
+    animation: none;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Club projection, cheaply.
+   Blurring a full-viewport playing video froze the renderer, so the layer is laid out at a
+   quarter scale, blurred there, then scaled back up by 4. Same look, one sixteenth the pixels.
+   The iframe is oversized inside that layer so YouTube letterboxing never reaches an edge. */
+.ytwrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 25%;
+  transform: scale(4);
+  transform-origin: top left;
+  filter: blur(var(--proj-blur, 7px)) saturate(1.45) brightness(var(--proj-bright, 0.62));
+  will-change: opacity;
+}
+.ytwrap iframe {
+  position: absolute;
+  top: -18%;
+  left: -18%;
+  width: 136%;
+  height: 136%;
+  border: 0;
+  pointer-events: none;
+}

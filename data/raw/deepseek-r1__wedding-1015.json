@@ -1,0 +1,57 @@
+{
+  "djId": "deepseek-r1",
+  "briefId": "wedding-1015",
+  "model": "deepseek-ai/deepseek-r1-0528-maas",
+  "generatedAt": "2026-09-04T18:53:24.612Z",
+  "read": "Post-dinner energy rising with mixed-age crowd needing familiar, uplifting dance anthems to fill the floor.",
+  "tracks": [
+    {
+      "artist": "ABBA",
+      "title": "Dancing Queen",
+      "year": 1976,
+      "bpm": 101,
+      "why": "Classic disco invites older guests with infectious groove.",
+      "transition": "Fade beat into next intro drums."
+    },
+    {
+      "artist": "Pharrell Williams",
+      "title": "Happy",
+      "year": 2013,
+      "bpm": 115,
+      "why": "Modern pop joy attracts younger crowd.",
+      "transition": "Match percussion to Uptown Funk."
+    },
+    {
+      "artist": "Mark Ronson",
+      "title": "Uptown Funk",
+      "year": 2014,
+      "bpm": 115,
+      "why": "Retro funk drives momentum universally.",
+      "transition": "Build drums into MJ horn riff."
+    },
+    {
+      "artist": "Michael Jackson",
+      "title": "Don't Stop 'Til You Get Enough",
+      "year": 1979,
+      "bpm": 118,
+      "why": "Energetic rhythm escalates dance enthusiasm.",
+      "transition": "Sharp cut to piano intro."
+    },
+    {
+      "artist": "Whitney Houston",
+      "title": "I Wanna Dance with Somebody",
+      "year": 1987,
+      "bpm": 120,
+      "why": "Anthemic chorus unites all generations.",
+      "transition": "Sudden drop into intro beat."
+    },
+    {
+      "artist": "Earth, Wind & Fire",
+      "title": "September",
+      "year": 1978,
+      "bpm": 125,
+      "why": "Euphoric finale ensures no one sits.",
+      "transition": "Final track; no transition needed."
+    }
+  ]
+}

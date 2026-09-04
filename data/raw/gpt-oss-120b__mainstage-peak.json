@@ -1,0 +1,57 @@
+{
+  "djId": "gpt-oss-120b",
+  "briefId": "mainstage-peak",
+  "model": "openai/gpt-oss-120b-maas",
+  "generatedAt": "2026-09-04T18:51:09.343Z",
+  "read": "Phones bright, crowd buzzing, hungry for a massive anthem; I feel a wave of anticipation building.",
+  "tracks": [
+    {
+      "artist": "David Guetta feat. Sia",
+      "title": "Titanium",
+      "year": 2011,
+      "bpm": 126,
+      "why": "Iconic vocal anthem, instantly lifts energy, phones light up.",
+      "transition": "High‑pass filter out, drop beat into Animals' synth."
+    },
+    {
+      "artist": "Martin Garrix",
+      "title": "Animals",
+      "year": 2013,
+      "bpm": 128,
+      "why": "Recognizable drop, crowd erupts, keeps momentum.",
+      "transition": "Cut low end, loop vocal into Reload intro."
+    },
+    {
+      "artist": "Sebastian Ingrosso, Tommy Trash feat. John Martin",
+      "title": "Reload",
+      "year": 2012,
+      "bpm": 128,
+      "why": "Melodic big‑room, sing‑along hook, maintains peak.",
+      "transition": "Echo fade, sudden bass hit into Turn Down for What."
+    },
+    {
+      "artist": "DJ Snake & Lil Jon",
+      "title": "Turn Down for What",
+      "year": 2013,
+      "bpm": 100,
+      "why": "Aggressive chant, ignites frenzy, instant crowd roar.",
+      "transition": "Rapid filter sweep, crossfade into Mammoth's synth."
+    },
+    {
+      "artist": "Knife Party",
+      "title": "Mammoth",
+      "year": 2013,
+      "bpm": 128,
+      "why": "Heavy bass, massive impact, crowd goes wild.",
+      "transition": "Bass drop resolves, open melodic break to Wake Me Up."
+    },
+    {
+      "artist": "Avicii",
+      "title": "Wake Me Up",
+      "year": 2013,
+      "bpm": 124,
+      "why": "Uplifting anthem, everyone sings, perfect fireworks climax.",
+      "transition": ""
+    }
+  ]
+}

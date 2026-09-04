@@ -1,0 +1,57 @@
+{
+  "djId": "gemini-2.5-flash",
+  "briefId": "rooftop-golden",
+  "model": "gemini-2.5-flash",
+  "generatedAt": "2026-09-04T18:44:15.527Z",
+  "read": "The room is warming up with the sunset; I’m laying down inviting grooves, nothing too assertive, just setting a deep, soulful foundation.",
+  "tracks": [
+    {
+      "artist": "Khruangbin",
+      "title": "Evan Finds the Third Room",
+      "year": 2018,
+      "bpm": 105,
+      "why": "Warm, funky, chill groove. Perfect for sipping drinks as the city glows.",
+      "transition": "Let the bassline slowly fade, creating space for the next."
+    },
+    {
+      "artist": "Moodymann",
+      "title": "Sunday Hotel",
+      "year": 2001,
+      "bpm": 108,
+      "why": "Deep, soulful, slightly melancholic. A smooth transition into Detroit warmth.",
+      "transition": "Blend the warm pads and gentle beat into the next track's intro."
+    },
+    {
+      "artist": "Floating Points",
+      "title": "Nespole",
+      "year": 2017,
+      "bpm": 118,
+      "why": "Organic, evolving, rich textures. Introduces a subtle, driving rhythm.",
+      "transition": "Long blend, allowing the synth textures to intertwine with the next."
+    },
+    {
+      "artist": "St Germain",
+      "title": "Rose Rouge",
+      "year": 2000,
+      "bpm": 120,
+      "why": "Iconic, jazzy house. Hypnotic sax riff draws people deeper into the mood.",
+      "transition": "Isolate the kick and bass, then bring in the next track's rhythm."
+    },
+    {
+      "artist": "Kerri Chandler",
+      "title": "Bar A Thym",
+      "year": 2005,
+      "bpm": 124,
+      "why": "Classic deep house, warm chords, subtle energy. Makes you want to sway.",
+      "transition": "Let the deep bassline and filtered drums carry into the next track."
+    },
+    {
+      "artist": "Folamour",
+      "title": "Devoted To U",
+      "year": 2019,
+      "bpm": 122,
+      "why": "Uplifting, soulful house with disco leanings. Solidifies feel-good groove.",
+      "transition": "Let the main loop ride out, smoothly bringing in the next track."
+    }
+  ]
+}

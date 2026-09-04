@@ -1,0 +1,57 @@
+{
+  "djId": "deepseek-r1",
+  "briefId": "mainstage-peak",
+  "model": "deepseek-ai/deepseek-r1-0528-maas",
+  "generatedAt": "2026-09-04T18:54:50.663Z",
+  "read": "Festival crowd demands explosive energy and immediate hooks; visual impact supersedes musical nuance for 15,000 fans.",
+  "tracks": [
+    {
+      "artist": "Swedish House Mafia",
+      "title": "Greyhound",
+      "year": 2012,
+      "bpm": 128,
+      "why": "Opening cannon shot: driving bass commands attention instantly.",
+      "transition": "Match kick drum roll into Zombie Nation's seismic intro."
+    },
+    {
+      "artist": "Zombie Nation",
+      "title": "Kernkraft 400 (Sport Chant Stadium Remix)",
+      "year": 1999,
+      "bpm": 130,
+      "why": "Simple synth hook penetrates entire field, unifying rave.",
+      "transition": "Hard-cut during chant peak into Chemical's abrasive synth."
+    },
+    {
+      "artist": "The Chemical Brothers",
+      "title": "Hey Boy Hey Girl",
+      "year": 1999,
+      "bpm": 126,
+      "why": "Distorted hook cuts chaos; crowd shouts vocal tagline.",
+      "transition": "Syncopated hi-hat exit into SICK INDIVIDUAL drop."
+    },
+    {
+      "artist": "Alok, Vargas & Gabi",
+      "title": "SICK INDIVIDUAL",
+      "year": 2021,
+      "bpm": 128,
+      "why": "Brutal minimal drop ensures maximum CO2 jet deployment.",
+      "transition": "Blend distorted bass frequencies into Epic's orchestral stabs."
+    },
+    {
+      "artist": "Sandro Silva & Quintino",
+      "title": "Epic",
+      "year": 2011,
+      "bpm": 128,
+      "why": "Monolithic riffs visible from orbit; zero interpretation needed.",
+      "transition": "Flare synth outro segues into Promises' anthemic guitar."
+    },
+    {
+      "artist": "Calvin Harris & Sam Smith",
+      "title": "Promises (David Guetta Remix)",
+      "year": 2018,
+      "bpm": 122,
+      "why": "Vocals anchor finale while remix keeps energy apocalyptic.",
+      "transition": "Laser sweep climax across repeated chorus; freeze."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "djId": "gemini-2.5-flash",
+  "briefId": "basement-1am",
+  "model": "gemini-2.5-flash",
+  "generatedAt": "2026-09-04T18:45:25.684Z",
+  "read": "Sweat-soaked energy is high, seeking anthems with a genuine, communal vibe, no cheesy nostalgia allowed.",
+  "tracks": [
+    {
+      "artist": "Arctic Monkeys",
+      "title": "I Bet You Look Good on the Dancefloor",
+      "year": 2006,
+      "bpm": 103,
+      "why": "Raw indie energy, iconic riff, instant singalong. Sets the cool tone.",
+      "transition": "Keep the guitar-driven momentum, building intensity towards a danceable beat."
+    },
+    {
+      "artist": "Franz Ferdinand",
+      "title": "Take Me Out",
+      "year": 2004,
+      "bpm": 105,
+      "why": "Builds tension, dynamic shifts, universally recognized dance-rock anthem.",
+      "transition": "Explode the built-up energy into an unexpected, bass-driven hip-hop banger."
+    },
+    {
+      "artist": "Missy Elliott",
+      "title": "Get Ur Freak On",
+      "year": 2001,
+      "bpm": 178,
+      "why": "Unmistakable beat, instant energy surge, iconic, everyone shouts along.",
+      "transition": "Ride the unique, driving rhythm into an electro-house party monster."
+    },
+    {
+      "artist": "Basement Jaxx",
+      "title": "Where's Your Head At?",
+      "year": 2001,
+      "bpm": 128,
+      "why": "Relentless energy, iconic sample, pure, unadulterated party chaos.",
+      "transition": "Maintain the vibrant dance energy, shifting into a melodic, cool singalong."
+    },
+    {
+      "artist": "Justice",
+      "title": "D.A.N.C.E.",
+      "year": 2007,
+      "bpm": 118,
+      "why": "Infectious, feel-good, cool, everyone sings the spelling. Perfect vibe shift.",
+      "transition": "Drive into an explosive, stadium-filling anthem for maximum release."
+    },
+    {
+      "artist": "The Killers",
+      "title": "Mr. Brightside",
+      "year": 2004,
+      "bpm": 148,
+      "why": "The ultimate euphoric singalong, pure collective release, leaves them buzzing.",
+      "transition": "Leave them breathless, sweaty, and wanting more from this basement."
+    }
+  ]
+}

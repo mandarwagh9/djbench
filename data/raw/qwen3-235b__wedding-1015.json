@@ -1,0 +1,57 @@
+{
+  "djId": "qwen3-235b",
+  "briefId": "wedding-1015",
+  "model": "qwen/qwen3-235b-a22b-instruct-2507-maas",
+  "generatedAt": "2026-09-04T18:55:31.160Z",
+  "read": "Generational bridge needed—warm bodies, not wallflowers. Joy is the only language.",
+  "tracks": [
+    {
+      "artist": "Robbie Williams",
+      "title": "Rock DJ",
+      "year": 2000,
+      "bpm": 120,
+      "why": "Irresistible funk bass pulls skeptics in, cheeky energy unites ages.",
+      "transition": "Strip it back to cowbell, cue the next groove."
+    },
+    {
+      "artist": "Gloria Gaynor",
+      "title": "I Will Survive",
+      "year": 1978,
+      "bpm": 118,
+      "why": "Anthem of resilience everyone knows, matriarchs claim the floor.",
+      "transition": "Fade vocals early, loop string stab into next beat."
+    },
+    {
+      "artist": "OutKast",
+      "title": "Hey Ya!",
+      "year": 2003,
+      "bpm": 170,
+      "why": "Explosive joy—kids jump, elders grin, all move fast.",
+      "transition": "Match energy with stomp-clap rhythm into next groove."
+    },
+    {
+      "artist": "Queen",
+      "title": "Don't Stop Me Now",
+      "year": 1978,
+      "bpm": 156,
+      "why": "Uplifting, theatrical, universally loved—pure momentum at peak joy.",
+      "transition": "Ride Freddie’s final note into disco downbeat."
+    },
+    {
+      "artist": "Sister Sledge",
+      "title": "We Are Family",
+      "year": 1979,
+      "bpm": 120,
+      "why": "The bloodline anthem—hands link, generations sync, hearts open.",
+      "transition": "Extend intro beat, layer crowd noise into lull."
+    },
+    {
+      "artist": "Etta James",
+      "title": "At Last",
+      "year": 1960,
+      "bpm": 64,
+      "why": "Slow dance closer—love honored, grandmas sway with groomsmen.",
+      "transition": "Let final note breathe, then speak: 'One more?'"
+    }
+  ]
+}

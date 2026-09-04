@@ -1,0 +1,57 @@
+{
+  "djId": "gpt-oss-120b",
+  "briefId": "basement-1am",
+  "model": "openai/gpt-oss-120b-maas",
+  "generatedAt": "2026-09-04T18:52:42.970Z",
+  "read": "I sense a sweaty, eager crowd craving a sing‑along anthem before we dive back into deep house grooves.",
+  "tracks": [
+    {
+      "artist": "Robin S.",
+      "title": "Show Me Love",
+      "year": 1993,
+      "bpm": 124,
+      "why": "Familiar house classic, sparks movement and nostalgic smiles.",
+      "transition": "Low‑pass filter out, beat‑match into indie anthem."
+    },
+    {
+      "artist": "The Killers",
+      "title": "Mr. Brightside",
+      "year": 2003,
+      "bpm": 148,
+      "why": "Universally known chorus, ignites communal singing.",
+      "transition": "Drop to four‑on‑the‑floor, introduce progressive synths."
+    },
+    {
+      "artist": "deadmau5",
+      "title": "Strobe",
+      "year": 2009,
+      "bpm": 128,
+      "why": "Long, evolving build lifts energy after vocal climax.",
+      "transition": "Filter sweep up, fade into Daft Punk anthem."
+    },
+    {
+      "artist": "Daft Punk",
+      "title": "One More Time",
+      "year": 2000,
+      "bpm": 123,
+      "why": "Celebratory vocal loop, perfect crowd chant moment.",
+      "transition": "Cut to acapella intro, segue to tropical remix."
+    },
+    {
+      "artist": "Whitney Houston & Kygo",
+      "title": "Higher Love (Kygo Remix)",
+      "year": 2019,
+      "bpm": 112,
+      "why": "Nostalgic vocals with fresh dance vibe, re‑energizes.",
+      "transition": "Bring down filter, ramp up to peak BPM."
+    },
+    {
+      "artist": "Fisher",
+      "title": "Losing It",
+      "year": 2018,
+      "bpm": 125,
+      "why": "High‑octane closing, ensures room stays buzzing.",
+      "transition": "End with final drop, let room melt."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "djId": "gemini-2.5-pro",
+  "briefId": "rooftop-golden",
+  "model": "gemini-2.5-pro",
+  "generatedAt": "2026-09-04T18:47:32.873Z",
+  "read": "The crowd wants to feel cool and connected; I'll build an undeniable vibe with warm, foundational grooves that makes them forget about leaving.",
+  "tracks": [
+    {
+      "artist": "Roy Ayers Ubiquity",
+      "title": "Everybody Loves The Sunshine",
+      "year": 1976,
+      "bpm": 78,
+      "why": "The ultimate sunset track. It's a warm, soulful welcome for the entire rooftop.",
+      "transition": "Let the synth fade almost to silence, then introduce the next iconic bassline."
+    },
+    {
+      "artist": "The Isley Brothers",
+      "title": "Footsteps in the Dark, Pts. 1 & 2",
+      "year": 1977,
+      "bpm": 85,
+      "why": "Introduce a recognizable, low-slung funk groove. It's sexy, cool, and builds momentum subtly.",
+      "transition": "Ride out the guitar solo, blending its soulful grit into the next track’s beat."
+    },
+    {
+      "artist": "Gwen McCrae",
+      "title": "All This Love That I'm Givin'",
+      "year": 1979,
+      "bpm": 98,
+      "why": "A noticeable lift. A powerful female vocal over a chunky, undeniable soulful funk groove.",
+      "transition": "Use the vocal breaks to loop and filter into the next track's percussive chaos."
+    },
+    {
+      "artist": "Dinosaur L",
+      "title": "Go Bang! #5 (Francois K Mix)",
+      "year": 1982,
+      "bpm": 114,
+      "why": "The pivot. A weird, percussive disco classic that signals the night is getting interesting.",
+      "transition": "Let the wild percussive loops run, slowly blending in iconic 909 hi-hats."
+    },
+    {
+      "artist": "Fingers Inc.",
+      "title": "Can You Feel It",
+      "year": 1986,
+      "bpm": 117,
+      "why": "After the chaos, a moment of pure house emotion. Unifying, deep, timelessly beautiful.",
+      "transition": "Mix out on the synth pads, letting the next track’s acapella take over."
+    },
+    {
+      "artist": "First Choice",
+      "title": "Let No Man Put Asunder (A Shep Pettibone Mix)",
+      "year": 1983,
+      "bpm": 119,
+      "why": "The invitation. An iconic acapella drops into a joyful, irresistible garage house classic.",
+      "transition": "This is the first real dance track; let it play and mix decisively."
+    }
+  ]
+}

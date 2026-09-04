@@ -1,0 +1,57 @@
+{
+  "djId": "deepseek-r1",
+  "briefId": "closing-540",
+  "model": "deepseek-ai/deepseek-r1-0528-maas",
+  "generatedAt": "2026-09-04T18:54:09.013Z",
+  "read": "Forty survivors craving transcendence; sculpt deep groove into dawn's fragile grace.",
+  "tracks": [
+    {
+      "artist": "Floating Points",
+      "title": "Bias (Original Mix)",
+      "year": 2019,
+      "bpm": 122,
+      "why": "Hypnotic pulse anchors exhaling energy",
+      "transition": "Layers dissonance then fades synth drone slowly"
+    },
+    {
+      "artist": "Overmono",
+      "title": "Gunk (Original Mix)",
+      "year": 2021,
+      "bpm": 131,
+      "why": "Textured bass surge compels surrender",
+      "transition": "Slams breaks into syncopated beat morph"
+    },
+    {
+      "artist": "Moderat",
+      "title": "Rusty Nails",
+      "year": 2013,
+      "bpm": 114,
+      "why": "Haunting vocals distill collective melancholy",
+      "transition": "Resolve pads into rhythmic drum decay"
+    },
+    {
+      "artist": "DJ Koze",
+      "title": "Pick Up",
+      "year": 2018,
+      "bpm": 107,
+      "why": "Disco soul ignites bittersweet euphoria",
+      "transition": "Fade guitar lick into vinyl crackle"
+    },
+    {
+      "artist": "Four Tet",
+      "title": "Two Thousand and Seventeen",
+      "year": 2017,
+      "bpm": 92,
+      "why": "Resonant piano opens infinite space",
+      "transition": "Swanee whistle melts into wind chimes"
+    },
+    {
+      "artist": "Nils Frahm",
+      "title": "Says",
+      "year": 2013,
+      "bpm": 78,
+      "why": "Piano swells evoke cathartic dawn",
+      "transition": "Suspend final note until silence screams"
+    }
+  ]
+}

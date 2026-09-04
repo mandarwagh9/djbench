@@ -1,0 +1,57 @@
+{
+  "djId": "gemini-2.5-pro",
+  "briefId": "mainstage-peak",
+  "model": "gemini-2.5-pro",
+  "generatedAt": "2026-09-04T18:48:39.513Z",
+  "read": "This crowd is a powder keg; they demand recognizable, euphoric, high-impact anthems, not subtlety.",
+  "tracks": [
+    {
+      "artist": "Age Of Love",
+      "title": "The Age Of Love (Charlotte de Witte & Enrico Sangiuliano Remix)",
+      "year": 2021,
+      "bpm": 135,
+      "why": "Instant, modern, thunderous techno with a melody everyone subconsciously knows. An immediate statement.",
+      "transition": "Use a long, filtered echo on the final synth stab into the breaks."
+    },
+    {
+      "artist": "The Chemical Brothers",
+      "title": "Hey Boy Hey Girl",
+      "year": 1999,
+      "bpm": 132,
+      "why": "The 'Here we go!' sample is a direct command. It's pure festival swagger.",
+      "transition": "Loop the acid line and slam in the next track’s massive kick drum."
+    },
+    {
+      "artist": "Adam Beyer, Layton Giordani & Green Velvet",
+      "title": "Space Date",
+      "year": 2018,
+      "bpm": 133,
+      "why": "A modern techno weapon with an undeniable vocal hook. Maximum energy, zero fat.",
+      "transition": "Cut the bass and let the vocal echo during the intro of the next track."
+    },
+    {
+      "artist": "Faithless",
+      "title": "Insomnia (Monster Mix)",
+      "year": 1995,
+      "bpm": 130,
+      "why": "The ultimate hands-in-the-air moment. Pure serotonin. A legendary anthem for a massive crowd.",
+      "transition": "Let the final synth riff fade and slam in the next track’s distorted kick."
+    },
+    {
+      "artist": "I Hate Models",
+      "title": "Transcendental Fusion",
+      "year": 2022,
+      "bpm": 142,
+      "why": "Violently pivot from classic euphoria into brutal, fast, modern hard trance. A deliberate shock.",
+      "transition": "Use a huge reverb wash on the melody to build into the final track."
+    },
+    {
+      "artist": "Laurent Garnier",
+      "title": "The Man With The Red Face",
+      "year": 2000,
+      "bpm": 138,
+      "why": "The final, cathartic release. A journey from relentless rhythm to pure human emotion.",
+      "transition": "Let the final saxophone solo play out into a roaring, appreciative silence."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "djId": "gemini-2.5-pro",
+  "briefId": "closing-540",
+  "model": "gemini-2.5-pro",
+  "generatedAt": "2026-09-04T18:48:04.597Z",
+  "read": "These last souls aren't here for one more banger; they need a gentle, shared emotional release to carry them into the morning light.",
+  "tracks": [
+    {
+      "artist": "St. Germain",
+      "title": "Rose Rouge",
+      "year": 2000,
+      "bpm": 120,
+      "why": "A soulful groove to honor the dancefloor while signaling a deeper, jazzier direction.",
+      "transition": "Let the iconic vocal loop and fade under the next track’s melodic intro."
+    },
+    {
+      "artist": "Caribou",
+      "title": "Can't Do Without You",
+      "year": 2014,
+      "bpm": 121,
+      "why": "A warm, repetitive, and emotional loop that feels like a shared, communal hug.",
+      "transition": "Ride out the repeating vocal phrase, filtering it down into the next beat."
+    },
+    {
+      "artist": "DJ Koze",
+      "title": "XTC",
+      "year": 2015,
+      "bpm": 120,
+      "why": "Introduces a hypnotic, meditative state with its spoken word and ethereal pads.",
+      "transition": "Let the main synth pad wash out into a long, cavernous reverb tail."
+    },
+    {
+      "artist": "Boards of Canada",
+      "title": "Roygbiv",
+      "year": 1998,
+      "bpm": 88,
+      "why": "A sudden energy drop into pure nostalgia; a warm, hazy, childhood memory feeling.",
+      "transition": "Fade out the hazy beat, leaving only the melodic synth wash lingering."
+    },
+    {
+      "artist": "Brian Eno",
+      "title": "1/1",
+      "year": 1978,
+      "bpm": 0,
+      "why": "Total decompression. A timeless, serene soundscape that washes over the room, erasing fatigue.",
+      "transition": "A long, slow crossfade, letting the piano notes gently merge into vocal layers."
+    },
+    {
+      "artist": "Julianna Barwick",
+      "title": "One Half",
+      "year": 2013,
+      "bpm": 0,
+      "why": "A final, hopeful, cleansing piece. The layered vocals feel human, a quiet choir.",
+      "transition": "Let it play out in full as the lights come up completely."
+    }
+  ]
+}

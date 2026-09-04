@@ -1,0 +1,57 @@
+{
+  "djId": "gemini-2.5-flash",
+  "briefId": "mainstage-peak",
+  "model": "gemini-2.5-flash",
+  "generatedAt": "2026-09-04T18:44:57.078Z",
+  "read": "The crowd is electric, ready to explode; we're igniting this festival with pure, unadulterated euphoria.",
+  "tracks": [
+    {
+      "artist": "Avicii",
+      "title": "Levels",
+      "year": 2011,
+      "bpm": 126,
+      "why": "Instant euphoria, universal anthem. Detonates the crowd from the first beat.",
+      "transition": "Soaring chords fade into a driving, uplifting vocal and synth melody."
+    },
+    {
+      "artist": "Swedish House Mafia",
+      "title": "Don't You Worry Child (feat. John Martin)",
+      "year": 2012,
+      "bpm": 129,
+      "why": "Another massive singalong, keeps the energy absolutely soaring, iconic vocal.",
+      "transition": "Epic drop ends, then a powerful synth and bassline takes over hard."
+    },
+    {
+      "artist": "Benny Benassi",
+      "title": "Satisfaction",
+      "year": 2002,
+      "bpm": 130,
+      "why": "Unmistakable, raw, driving energy. Pure dancefloor detonation guaranteed.",
+      "transition": "Iconic riff cuts hard, then a relentless, percussive synth beat crashes in."
+    },
+    {
+      "artist": "Darude",
+      "title": "Sandstorm",
+      "year": 1999,
+      "bpm": 136,
+      "why": "The ultimate party starter; relentless, high-octane energy, builds absolute chaos.",
+      "transition": "High-energy synth breakdown leads to a massive drop into a powerful classic."
+    },
+    {
+      "artist": "Zombie Nation",
+      "title": "Kernkraft 400",
+      "year": 1999,
+      "bpm": 139,
+      "why": "The sports anthem that transcends; pure, unadulterated crowd hype and energy.",
+      "transition": "Full-throttle, then a sharp, driving cut into a universally loved remix."
+    },
+    {
+      "artist": "Eurythmics, Steve Angello, Laidback Luke",
+      "title": "Sweet Dreams (Are Made of This) (Steve Angello & Laidback Luke Remix)",
+      "year": 2010,
+      "bpm": 128,
+      "why": "Iconic classic remixed for maximum impact. A perfect, anthemic closer.",
+      "transition": "Ends with a massive, lingering bass drop, leaving the crowd completely exhilarated."
+    }
+  ]
+}

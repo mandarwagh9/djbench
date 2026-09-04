@@ -1,0 +1,57 @@
+{
+  "djId": "gpt-oss-120b",
+  "briefId": "rooftop-golden",
+  "model": "openai/gpt-oss-120b-maas",
+  "generatedAt": "2026-09-04T18:50:30.057Z",
+  "read": "The rooftop glows orange, drinks in hand, crowd chatty; they need a slow, warm build to shift into movement.",
+  "tracks": [
+    {
+      "artist": "Bonobo",
+      "title": "Kerala",
+      "year": 2017,
+      "bpm": 115,
+      "why": "Lush, melodic groove eases crowd into sunset vibe.",
+      "transition": "Slow fade, introduce subtle percussive loop to lift energy."
+    },
+    {
+      "artist": "Kaytranada",
+      "title": "Glowed Up",
+      "year": 2016,
+      "bpm": 111,
+      "why": "Smooth R&B rhythm adds body while keeping relaxed atmosphere.",
+      "transition": "Raise high‑pass filter, bring in brighter synths for momentum."
+    },
+    {
+      "artist": "Lane 8",
+      "title": "Atlas",
+      "year": 2015,
+      "bpm": 124,
+      "why": "Progressive chords amplify tension, inviting subtle movement.",
+      "transition": "Layer four‑on‑four kick, increase volume for dancefloor shift."
+    },
+    {
+      "artist": "Purple Disco Machine",
+      "title": "Dopamine",
+      "year": 2020,
+      "bpm": 124,
+      "why": "Funky disco groove ignites smile, nudges feet onto floor.",
+      "transition": "Drop bass filter, transition to vocal‑driven house energy."
+    },
+    {
+      "artist": "CamelPhat & Elderbrook",
+      "title": "Cola",
+      "year": 2017,
+      "bpm": 124,
+      "why": "Catchy vocal hook drives house groove, peak energy builds.",
+      "transition": "Switch to darker synth, boost tempo, prepare climax."
+    },
+    {
+      "artist": "Fisher",
+      "title": "Losing It",
+      "year": 2018,
+      "bpm": 125,
+      "why": "Massive bassline and rhythm unleash full dancefloor release.",
+      "transition": "Fade out gradually, let crowd ride peak energy to next set."
+    }
+  ]
+}

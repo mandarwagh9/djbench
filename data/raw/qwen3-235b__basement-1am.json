@@ -1,0 +1,57 @@
+{
+  "djId": "qwen3-235b",
+  "briefId": "basement-1am",
+  "model": "qwen/qwen3-235b-a22b-instruct-2507-maas",
+  "generatedAt": "2026-09-04T18:55:50.562Z",
+  "read": "They’re drunk on memory but won’t admit it—gotta pull the past up by the roots.",
+  "tracks": [
+    {
+      "artist": "Robyn",
+      "title": "Dancing On My Own",
+      "year": 2010,
+      "bpm": 126,
+      "why": "Heartbreak banger that everyone knows but won’t expect now.",
+      "transition": "Cut the drop, hold silence, then click the next."
+    },
+    {
+      "artist": "Outkast",
+      "title": "Hey Ya!",
+      "year": 2003,
+      "bpm": 172,
+      "why": "They’ll scream the chorus even if their voices crack.",
+      "transition": "Let the ‘shake it’ echo, then slash into next beat."
+    },
+    {
+      "artist": "Sleigh Bells",
+      "title": "Rill Rill",
+      "year": 2010,
+      "bpm": 90,
+      "why": "Cool bleed with haze—lets them sway, not just shout.",
+      "transition": "Fade the ‘sha-la-la’ into a vinyl crackle."
+    },
+    {
+      "artist": "Fugees",
+      "title": "Killing Me Softly",
+      "year": 1996,
+      "bpm": 92,
+      "why": "Lullaby with weight—pulls focus back to the floor.",
+      "transition": "End on the last note, pause, then kick the bass."
+    },
+    {
+      "artist": "M.I.A.",
+      "title": "Paper Planes",
+      "year": 2007,
+      "bpm": 88,
+      "why": "Gunshots and cash—knows no drunker truth than this.",
+      "transition": "Loop the cash register, then drop the beat like glass."
+    },
+    {
+      "artist": "LCD Soundsystem",
+      "title": "All My Friends",
+      "year": 2007,
+      "bpm": 98,
+      "why": "Twelve minutes of growing up—make them hug and forget names.",
+      "transition": "Let the piano fade into breath. Then, nothing."
+    }
+  ]
+}
