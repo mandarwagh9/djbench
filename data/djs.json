@@ -24,7 +24,7 @@
     "name": "GPT-OSS 120B",
     "lab": "OpenAI",
     "short": "OSS",
-    "accent": "#9CE86B",
+    "accent": "#DCDCE4",
     "provider": "vertex-openapi",
     "model": "openai/gpt-oss-120b-maas",
     "location": "us-central1"
@@ -34,7 +34,7 @@
     "name": "DeepSeek R1",
     "lab": "DeepSeek",
     "short": "R1",
-    "accent": "#6F7BFF",
+    "accent": "#A78BFA",
     "provider": "vertex-openapi",
     "model": "deepseek-ai/deepseek-r1-0528-maas",
     "location": "us-central1"
@@ -44,7 +44,7 @@
     "name": "Qwen3 235B",
     "lab": "Alibaba",
     "short": "QWEN",
-    "accent": "#FF8A3D",
+    "accent": "#FFC53D",
     "provider": "vertex-openapi",
     "model": "qwen/qwen3-235b-a22b-instruct-2507-maas",
     "location": "us-south1"
